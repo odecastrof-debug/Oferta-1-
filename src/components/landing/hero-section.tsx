@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
 
 export function HeroSection() {
-    const bookImage = PlaceHolderImages.find(img => img.id === 'hero-book-cover');
-
   return (
     <section id="hero" className="relative bg-background text-foreground pt-32 pb-24 md:pt-48 md:pb-32">
        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-background"></div>
@@ -24,21 +21,18 @@ export function HeroSection() {
         <div className="mt-12 flex justify-center">
             <div className="relative">
                 <div className="bg-black/30 p-2 sm:p-3 rounded-2xl shadow-2xl shadow-primary/10 border border-white/10">
-                  {bookImage && (
                       <div className="relative">
                         <Image
-                            src={bookImage.imageUrl}
-                            alt={bookImage.description}
+                            src="/images/hero-book.png"
+                            alt="Biblical Geography Book Preview"
                             width={400}
                             height={500}
-                            className="rounded-lg"
-                            data-ai-hint={bookImage.imageHint}
+                            className="w-full h-auto rounded-2xl"
                         />
                          <Badge className="absolute top-4 right-4 bg-primary/80 text-primary-foreground py-1 px-3 text-xs border border-amber-300/50">
                             500+ PAGES
                         </Badge>
                       </div>
-                  )}
                 </div>
                  <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-max">
                     <Button variant="secondary" className="bg-green-900/50 text-green-300 border border-green-700 hover:bg-green-900/70 backdrop-blur-sm">
