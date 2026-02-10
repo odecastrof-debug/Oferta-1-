@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "gallery-eden",
+      "description": "A lush, vibrant garden representing the Garden of Eden.",
+      "imageUrl": "https://images.unsplash.com/photo-1668599172651-cdc88b07c935?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnYXJkZW4lMjBlZGVufGVufDB8fHx8MTc3MDY4Mzk0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garden eden"
+    },
+    {
+      "id": "gallery-red-sea",
+      "description": "A vast expanse of water, representing the Red Sea.",
+      "imageUrl": "https://images.unsplash.com/photo-1578688493975-d45a4f6ce744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZWQlMjBzZWF8ZW58MHx8fHwxNzcwNzIxODU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red sea"
+    },
+    {
+      "id": "gallery-jerusalem",
+      "description": "An ancient city with stone walls, representing Ancient Jerusalem.",
+      "imageUrl": "https://images.unsplash.com/photo-1665246811296-9b7026e9eaf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmNpZW50JTIwamVydXNhbGVtfGVufDB8fHx8MTc3MDY4Mzk0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient jerusalem"
+    },
+    {
+      "id": "gallery-jordan-river",
+      "description": "A winding river through a desert landscape, representing the Jordan River.",
+      "imageUrl": "https://images.unsplash.com/photo-1708649882004-72fbbc5fd3e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxqb3JkYW4lMjByaXZlcnxlbnwwfHx8fDE3NzA2ODM5Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jordan river"
+    },
+    {
+      "id": "gallery-galilee",
+      "description": "A serene lake surrounded by hills, representing the Sea of Galilee.",
+      "imageUrl": "https://images.unsplash.com/photo-1541472544680-ccc2e0014462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZWElMjBnYWxpbGVlfGVufDB8fHx8MTc3MDY4MzkzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sea galilee"
+    },
+    {
+      "id": "testimonial-pastor",
+      "description": "A portrait of a smiling pastor.",
+      "imageUrl": "https://images.unsplash.com/photo-1743341492595-9863a8b59f13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFzdG9yJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwNjgzOTM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pastor portrait"
+    },
+    {
+      "id": "visual-value-image",
+      "description": "A beautiful landscape from a biblical region.",
+      "imageUrl": "https://images.unsplash.com/photo-1666983310782-6728eb70d1e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiaWJsZSUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzA3MjE4NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bible landscape"
+    }
+  ]
 }
