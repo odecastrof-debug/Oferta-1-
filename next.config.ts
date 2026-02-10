@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'id-preview--b75d8225-6137-4251-9037-445b38b9b098.lovable.app',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
