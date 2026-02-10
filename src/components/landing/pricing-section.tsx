@@ -34,11 +34,11 @@ export function PricingSection() {
                 <div className="bg-background rounded-lg p-8 text-center flex flex-col items-center shadow-inner">
                     <p className="text-lg text-muted-foreground">One-time payment · Lifetime access</p>
                     <div className="my-4">
-                        <span className="text-5xl font-bold text-primary">US$6.99</span>
+                        <span className="text-5xl font-bold text-primary">US$5.90</span>
                         <span className="text-2xl text-muted-foreground line-through ml-2">US$49.99</span>
                     </div>
                     <Button size="lg" className="w-full text-xl h-16 mt-4">
-                        Buy now — US$6.99
+                        Buy now — US$5.90
                     </Button>
                     <div className="mt-6 flex justify-center items-center gap-6 text-muted-foreground">
                         <div className="flex items-center gap-2">

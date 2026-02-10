@@ -19,7 +19,7 @@ export function FinalCtaSection() {
         <div className="mt-10">
             <p className="text-3xl font-bold text-foreground">
                 <span className="text-muted-foreground line-through">US$49.99</span>
-                <span className="text-primary ml-4">US$6.99</span>
+                <span className="text-primary ml-4">US$5.90</span>
             </p>
         </div>
         <Button size="lg" className="mt-8 text-lg px-12 py-8">

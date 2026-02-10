@@ -14,6 +14,7 @@ import { GuaranteeSection } from '@/components/landing/guarantee-section';
 import { FaqSection } from '@/components/landing/faq-section';
 import { FinalCtaSection } from '@/components/landing/final-cta-section';
 import { Footer } from '@/components/landing/footer';
+import { CtaButtonSection } from '@/components/landing/cta-button-section';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <StatsSection />
+      <CtaButtonSection />
       <VisualValueSection />
       <GallerySection />
       <ChallengeSection />
