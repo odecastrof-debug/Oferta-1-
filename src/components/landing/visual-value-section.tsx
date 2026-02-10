@@ -23,10 +23,10 @@ export function VisualValueSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
-              280+ images that bring each passage to life
+              Understand the Bible as you never have before
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              So you can see what you used to only read
+              The Biblical Geography material is a complete visual guide to understanding the settings of the Scriptures.
             </p>
             <ul className="mt-8 space-y-4">
               {features.map((feature, index) => (

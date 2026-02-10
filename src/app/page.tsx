@@ -13,6 +13,8 @@ import { FaqSection } from '@/components/landing/faq-section';
 import { FinalCtaSection } from '@/components/landing/final-cta-section';
 import { Footer } from '@/components/landing/footer';
 import { CtaButtonSection } from '@/components/landing/cta-button-section';
+import { VisualValueSection } from '@/components/landing/visual-value-section';
+import { GallerySection } from '@/components/landing/gallery-section';
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <CtaButtonSection />
+      <VisualValueSection />
+      <GallerySection />
       <WaysToUnderstandSection />
       <ChallengeSection />
       <ModulesSection />

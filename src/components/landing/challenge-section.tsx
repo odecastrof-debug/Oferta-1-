@@ -25,9 +25,18 @@ export function ChallengeSection() {
   return (
     <section id="detailed-features" className="py-16 sm:py-24 bg-background">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
+                What you'll find in the Biblical Geography material is unique
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+                Our images are produced based on 3 pillars:
+            </p>
+        </div>
+
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
           {features.map((feature) => (
-            <Card key={feature.title} className="bg-card border-border/20 p-6">
+            <Card key={feature.title} className="bg-card border-border/20 p-6 text-left">
                 <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
                          <feature.icon className="w-6 h-6 text-primary" />
@@ -42,6 +51,11 @@ export function ChallengeSection() {
             </Card>
           ))}
         </div>
+        
+        <div className="mt-12 text-center">
+            <p className="text-lg italic text-muted-foreground">"You will not find anything like this anywhere else."</p>
+        </div>
+
         <div className="mt-20 flex justify-center items-center gap-8">
             <div className="text-right">
                 <p className="text-3xl font-bold text-foreground">
