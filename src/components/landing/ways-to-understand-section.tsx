@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import Image from 'next/image';
 import {
   Carousel,
@@ -6,20 +7,42 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { cn } from '@/lib/utils';
 
 const carouselItems = [
-  { id: 'carousel-artistic-illustrations', title: 'Artistic Illustrations' },
-  { id: 'carousel-historical-cartography', title: 'Historical Cartography' },
+  { id: 'carousel-historical-cartography', title: 'Cartography' },
   { id: 'carousel-real-locations', title: 'Real Locations' },
-  { id: 'carousel-3d-recons', title: '3D Recons' },
+  { id: 'carousel-3d-recons', title: '3D Reconstructions' },
+  { id: 'gallery-galilee', title: 'Biblical Landscapes' },
 ];
 
 export function WaysToUnderstandSection() {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   return (
-    <section id="visual-content-types" className="py-16 sm:py-24 bg-muted/30">
+    <section
+      id="visual-content-types"
+      className="py-16 sm:py-24 bg-background"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold text-primary tracking-widest uppercase">
@@ -32,31 +55,39 @@ export function WaysToUnderstandSection() {
 
         <div className="mt-12">
           <Carousel
+            setApi={setApi}
             opts={{
               align: 'start',
               loop: true,
             }}
-            className="w-full max-w-5xl mx-auto"
+            className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent className="-ml-4">
               {carouselItems.map((item, index) => {
-                const imageData = PlaceHolderImages.find(img => img.id === item.id);
+                const imageData = PlaceHolderImages.find(
+                  (img) => img.id === item.id
+                );
                 if (!imageData) return null;
                 return (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/4">
-                    <div className="p-1">
-                      <Card className="overflow-hidden rounded-lg">
-                        <CardContent className="relative aspect-[4/3] p-0">
+                  <CarouselItem
+                    key={index}
+                    className="pl-4 md:basis-1/2 lg:basis-1/4"
+                  >
+                    <div className="p-1 group">
+                      <Card className="overflow-hidden rounded-2xl shadow-lg border-none">
+                        <CardContent className="relative aspect-[3/2] p-0">
                           <Image
                             src={imageData.imageUrl}
                             alt={imageData.description}
                             fill
-                            className="object-cover transition-transform duration-300 hover:scale-105"
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
                             data-ai-hint={imageData.imageHint}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                          <div className="absolute bottom-0 left-0 p-4">
-                            <h3 className="text-lg font-semibold text-white tracking-wider">{item.title.toUpperCase()}</h3>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-lg" />
+                          <div className="absolute bottom-0 left-0 p-6">
+                            <h3 className="text-lg font-semibold text-white tracking-wider font-headline">
+                              {item.title.toUpperCase()}
+                            </h3>
                           </div>
                         </CardContent>
                       </Card>
@@ -65,9 +96,25 @@ export function WaysToUnderstandSection() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2" />
-            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2" />
+            <CarouselPrevious />
+            <CarouselNext />
           </Carousel>
+          
+          <div className="mt-8 flex justify-center items-center gap-3">
+            {Array.from({ length: count }).map((_, i) => (
+                <button
+                key={i}
+                onClick={() => api?.scrollTo(i)}
+                className={cn(
+                    'h-2.5 w-2.5 rounded-full transition-all duration-300',
+                    i === current
+                    ? 'w-10 bg-primary'
+                    : 'bg-foreground/20 hover:bg-foreground/30'
+                )}
+                aria-label={`Go to slide ${i + 1}`}
+                />
+            ))}
+          </div>
         </div>
       </div>
     </section>
