@@ -1,42 +1,52 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
-
-const trustBullets = [
-  "✔ Instant access",
-  "✔ Works on mobile",
-  "✔ Satisfaction guarantee"
-];
+import { Zap } from "lucide-react";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Badge } from "@/components/ui/badge";
 
 export function HeroSection() {
+    const bookImage = PlaceHolderImages.find(img => img.id === 'hero-book-cover');
+
   return (
-    <section id="hero" className="relative py-20 md:py-32">
-       <div className="absolute inset-0 bg-gradient-to-b from-background to-background/80 backdrop-blur-sm"></div>
+    <section id="hero" className="relative bg-background text-foreground pt-32 pb-24 md:pt-48 md:pb-32">
+       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-background"></div>
        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-lg font-semibold text-accent">+5,000 students have already transformed the way they read the Bible</p>
-        <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
-          Understand the Bible like never before,
-          <br />
-          <span className="text-primary">by seeing where and how each story happened</span>
-        </h1>
-        <p className="mt-6 text-xl text-muted-foreground max-w-3xl mx-auto">
-          Over 280 images showing you the exact locations of each biblical event — so you can finally understand the context and feel like you were there.
+        <p className="text-sm font-semibold text-muted-foreground tracking-widest uppercase">
+          Recognized as the most complete material on the market
         </p>
-        <div className="mt-10">
-          <p className="text-2xl font-semibold text-foreground">Biblical Geography</p>
-          <p className="text-lg text-primary">From Genesis to Revelation</p>
-        </div>
-        <div className="mt-10 flex flex-col gap-y-6 items-center">
-          <Button size="lg" className="text-lg px-12 py-8">
-            Explore the Bible on the map now
-          </Button>
-          <div className="flex flex-col sm:flex-row gap-x-6 gap-y-2 text-sm text-muted-foreground">
-            {trustBullets.map((bullet, index) => (
-              <span key={index} className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-primary" />
-                {bullet.replace('✔ ','')}
-              </span>
-            ))}
-          </div>
+        <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
+          Take a journey through every biblical scenario from <span className="text-primary">Genesis to Revelation</span>
+        </h1>
+        <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto">
+          A deep and accessible visual guide with over 280 cinematic images that reveal the settings, landscapes, and locations where each biblical event occurred.
+        </p>
+
+        <div className="mt-12 flex justify-center">
+            <div className="relative">
+                <div className="bg-black/30 p-2 sm:p-3 rounded-2xl shadow-2xl shadow-primary/10 border border-white/10">
+                  {bookImage && (
+                      <div className="relative">
+                        <Image
+                            src={bookImage.imageUrl}
+                            alt={bookImage.description}
+                            width={400}
+                            height={500}
+                            className="rounded-lg"
+                            data-ai-hint={bookImage.imageHint}
+                        />
+                         <Badge className="absolute top-4 right-4 bg-primary/80 text-primary-foreground py-1 px-3 text-xs border border-amber-300/50">
+                            500+ PAGES
+                        </Badge>
+                      </div>
+                  )}
+                </div>
+                 <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-max">
+                    <Button variant="secondary" className="bg-green-900/50 text-green-300 border border-green-700 hover:bg-green-900/70 backdrop-blur-sm">
+                        <Zap className="w-4 h-4 mr-2" />
+                        Instant Access after purchase
+                    </Button>
+                </div>
+            </div>
         </div>
       </div>
     </section>

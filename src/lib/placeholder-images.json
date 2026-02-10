@@ -41,6 +41,12 @@
       "description": "A beautiful landscape from a biblical region.",
       "imageUrl": "https://images.unsplash.com/photo-1666983310782-6728eb70d1e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiaWJsZSUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzA3MjE4NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bible landscape"
+    },
+    {
+      "id": "hero-book-cover",
+      "description": "The cover of the Biblical Geography book shown inside a tablet frame on a wooden table.",
+      "imageUrl": "https://images.unsplash.com/photo-1656746337411-eb66d1163fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwdGFibGV8ZW58MHx8fHwxNzcwNzIyMzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "book table"
     }
   ]
 }
