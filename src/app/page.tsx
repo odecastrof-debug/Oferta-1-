@@ -1,8 +1,6 @@
 import { Header } from '@/components/landing/header';
 import { HeroSection } from '@/components/landing/hero-section';
 import { StatsSection } from '@/components/landing/stats-section';
-import { VisualValueSection } from '@/components/landing/visual-value-section';
-import { GallerySection } from '@/components/landing/gallery-section';
 import { ChallengeSection } from '@/components/landing/challenge-section';
 import { WaysToUnderstandSection } from '@/components/landing/ways-to-understand-section';
 import { ModulesSection } from '@/components/landing/modules-section';
@@ -23,10 +21,8 @@ export default function Home() {
       <HeroSection />
       <StatsSection />
       <CtaButtonSection />
-      <VisualValueSection />
-      <GallerySection />
-      <ChallengeSection />
       <WaysToUnderstandSection />
+      <ChallengeSection />
       <ModulesSection />
       <TestimonialSection />
       <WhatYouGetSection />

@@ -47,6 +47,30 @@
       "description": "The cover of the Biblical Geography book shown inside a tablet frame on a wooden table.",
       "imageUrl": "https://images.unsplash.com/photo-1656746337411-eb66d1163fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwdGFibGV8ZW58MHx8fHwxNzcwNzIyMzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "book table"
+    },
+    {
+      "id": "carousel-artistic-illustrations",
+      "description": "Artistic illustration of a lush landscape with a river.",
+      "imageUrl": "https://images.unsplash.com/photo-1668599172651-cdc88b07c935?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnYXJkZW4lMjBlZGVufGVufDB8fHx8MTc3MDY4Mzk0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artistic illustration"
+    },
+    {
+      "id": "carousel-historical-cartography",
+      "description": "An ancient city with stone walls, representing historical cartography.",
+      "imageUrl": "https://images.unsplash.com/photo-1665246811296-9b7026e9eaf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmNpZW50JTIwamVydXNhbGVtfGVufDB8fHx8MTc3MDY4Mzk0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient jerusalem"
+    },
+    {
+      "id": "carousel-real-locations",
+      "description": "A winding river through a desert landscape, representing a real biblical location.",
+      "imageUrl": "https://images.unsplash.com/photo-1708649882004-72fbbc5fd3e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxqb3JkYW4lMjByaXZlcnxlbnwwfHx8fDE3NzA2ODM5Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jordan river"
+    },
+    {
+      "id": "carousel-3d-recons",
+      "description": "3D reconstruction of an ancient city.",
+      "imageUrl": "https://images.unsplash.com/photo-1613425383594-152865d39366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmNpZW50JTIwY2l0eSUyMDNkLXJlbmRlcnxlbnwwfHx8fDE3NzA3MjIyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "3d reconstruction"
     }
   ]
 }

@@ -1,67 +1,73 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, Map, Camera, Mountain, Paintbrush, View } from 'lucide-react';
+'use client';
+import Image from 'next/image';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+import { Card, CardContent } from '@/components/ui/card';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const ways = [
-    { icon: Paintbrush, title: "Artistic illustrations", description: "Visualize scenes you could only imagine" },
-    { icon: Map, title: "Historical cartography", description: "Understand the location of each event" },
-    { icon: Camera, title: "Real locations", description: "Connect the Bible with the modern world" },
-    { icon: View, title: "3D reconstructions", description: "See temples and cities as they were" },
-    { icon: Mountain, title: "Biblical landscapes", description: "Feel the context of each story" },
-];
-
-const bullets = [
-    "See the exact terrain of each story",
-    "Discover what archaeology revealed",
-    "Follow the routes with precise maps",
-    "Everything organized for you",
+const carouselItems = [
+  { id: 'carousel-artistic-illustrations', title: 'Artistic Illustrations' },
+  { id: 'carousel-historical-cartography', title: 'Historical Cartography' },
+  { id: 'carousel-real-locations', title: 'Real Locations' },
+  { id: 'carousel-3d-recons', title: '3D Recons' },
 ];
 
 export function WaysToUnderstandSection() {
   return (
-    <section id="ways-to-understand" className="py-16 sm:py-24 bg-muted/30">
+    <section id="visual-content-types" className="py-16 sm:py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
-            Multiple ways to understand
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Each type of image brings you closer to the story
+        <div className="text-center">
+          <p className="text-sm font-semibold text-primary tracking-widest uppercase">
+            Inside the material
           </p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
+            Different types of visual content
+          </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-            {ways.map((way) => (
-                <Card key={way.title} className="text-center">
-                    <CardHeader>
-                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                            <way.icon className="h-6 w-6 text-primary" aria-hidden="true" />
-                        </div>
-                        <CardTitle className="mt-4 text-lg font-semibold text-foreground">{way.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p className="text-sm text-muted-foreground">{way.description}</p>
-                    </CardContent>
-                </Card>
-            ))}
-        </div>
-
-        <div className="mt-16 max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-                <ul className="space-y-4">
-                    {bullets.map((bullet, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                            <span className="text-lg text-foreground">{bullet}</span>
-                        </li>
-                    ))}
-                </ul>
-                <div className="text-center">
-                    <Button size="lg" className="text-lg">
-                        See where biblical events happened
-                    </Button>
-                </div>
-            </div>
+        <div className="mt-12">
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent className="-ml-4">
+              {carouselItems.map((item, index) => {
+                const imageData = PlaceHolderImages.find(img => img.id === item.id);
+                if (!imageData) return null;
+                return (
+                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/4">
+                    <div className="p-1">
+                      <Card className="overflow-hidden rounded-lg">
+                        <CardContent className="relative aspect-[4/3] p-0">
+                          <Image
+                            src={imageData.imageUrl}
+                            alt={imageData.description}
+                            fill
+                            className="object-cover transition-transform duration-300 hover:scale-105"
+                            data-ai-hint={imageData.imageHint}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                          <div className="absolute bottom-0 left-0 p-4">
+                            <h3 className="text-lg font-semibold text-white tracking-wider">{item.title.toUpperCase()}</h3>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2" />
+            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2" />
+          </Carousel>
         </div>
       </div>
     </section>

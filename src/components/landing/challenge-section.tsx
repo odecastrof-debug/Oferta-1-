@@ -1,56 +1,59 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
+import { Layers, Landmark, Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
-const challenges = [
-    {
-      id: "01",
-      title: "Shapeless places",
-      description: "Red Sea, Mount Sinai, Jordan — names that remain abstract, with no visual connection to historical reality."
-    },
-    {
-      id: "02",
-      title: "Fragmented context",
-      description: "Years of Bible study without understanding the geography that directly influenced the events described."
-    },
-    {
-      id: "03",
-      title: "Scarce materials",
-      description: "High-quality visual resources are rare, expensive, or incomplete — creating a gap in deep understanding."
-    }
-  ];
+const features = [
+  {
+    icon: Layers,
+    title: "Detailed Physical Geography",
+    description: "Relief, climate, vegetation, rivers and landscapes recreated with scientific precision."
+  },
+  {
+    icon: Landmark,
+    title: "Archaeological Context",
+    description: "Ruins and structures based on documented archaeological discoveries."
+  },
+  {
+    icon: Globe,
+    title: "Academic Cartography",
+    description: "Maps and routes validated by biblical studies specialists."
+  }
+];
 
 export function ChallengeSection() {
   return (
-    <section id="challenge" className="py-16 sm:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
-            The Challenge
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Most Christians read the Bible without imagining where the events took place
-          </p>
-        </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {challenges.map((challenge) => (
-            <Card key={challenge.id} className="flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-xl font-bold font-headline text-accent">
-                  {challenge.id} — {challenge.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{challenge.description}</p>
-              </CardContent>
+    <section id="detailed-features" className="py-16 sm:py-24 bg-background">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 md:grid-cols-3">
+          {features.map((feature) => (
+            <Card key={feature.title} className="bg-card border-border/20 p-6">
+                <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                         <feature.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                        <h3 className="text-lg font-semibold text-foreground mb-2">
+                          {feature.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">{feature.description}</p>
+                    </div>
+                </div>
             </Card>
           ))}
         </div>
-        <div className="mt-12 text-center max-w-4xl mx-auto">
-          <p className="text-lg text-foreground">
-            The vast majority of readers never developed a visual understanding of the sacred settings.
-          </p>
-          <p className="text-lg text-foreground font-semibold">
-            This gap limits the depth of your Bible study.
-          </p>
+        <div className="mt-20 flex justify-center items-center gap-8">
+            <div className="text-right">
+                <p className="text-3xl font-bold text-foreground">
+                    <span className="text-xl text-muted-foreground line-through mr-2">$49.99</span>
+                    <span className="text-primary ml-2">$5.90</span>
+                </p>
+            </div>
+            <Button asChild size="lg" className="px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90">
+                <Link href="#pricing">
+                    Buy Now
+                </Link>
+            </Button>
         </div>
       </div>
     </section>
