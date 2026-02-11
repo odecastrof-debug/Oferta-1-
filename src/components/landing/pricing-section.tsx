@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, CreditCard, ShieldCheck, Zap } from "lucide-react";
+import Link from "next/link";
 
 const summary = [
   "280+ images that transform your reading",
@@ -37,8 +38,10 @@ export function PricingSection() {
                         <span className="text-5xl font-bold text-primary">US$5.90</span>
                         <span className="text-2xl text-muted-foreground line-through ml-2">US$49.99</span>
                     </div>
-                    <Button size="lg" className="w-full text-xl h-16 mt-4">
-                        Buy now — US$5.90
+                    <Button asChild size="lg" className="w-full text-xl h-16 mt-4">
+                        <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
+                            Buy now — US$5.90
+                        </Link>
                     </Button>
                     <div className="mt-6 flex justify-center items-center gap-6 text-muted-foreground">
                         <div className="flex items-center gap-2">

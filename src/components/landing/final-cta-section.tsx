@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function FinalCtaSection() {
   return (
@@ -22,8 +23,10 @@ export function FinalCtaSection() {
                 <span className="text-primary ml-4">US$5.90</span>
             </p>
         </div>
-        <Button size="lg" className="mt-8 text-lg px-12 py-8">
-          Explore the Bible on the map now
+        <Button asChild size="lg" className="mt-8 text-lg px-12 py-8">
+          <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
+            Explore the Bible on the map now
+          </Link>
         </Button>
         <p className="mt-4 text-sm text-muted-foreground">
           Instant access · One-time payment · 100% secure payment · 30-day full guarantee

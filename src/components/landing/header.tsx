@@ -14,7 +14,7 @@ export function Header() {
           </Link>
         </div>
         <Button asChild>
-          <Link href="#pricing">Get It Now</Link>
+          <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">Get It Now</Link>
         </Button>
       </div>
     </header>

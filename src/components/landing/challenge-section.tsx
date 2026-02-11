@@ -64,7 +64,7 @@ export function ChallengeSection() {
                 </p>
             </div>
             <Button asChild size="lg" className="px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90">
-                <Link href="#pricing">
+                <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
                     Buy Now
                 </Link>
             </Button>
