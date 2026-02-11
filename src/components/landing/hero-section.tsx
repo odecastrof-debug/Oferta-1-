@@ -18,7 +18,7 @@ export function HeroSection() {
         <div className="mt-12">
           <div className="relative w-full max-w-xl mx-auto rounded-2xl overflow-hidden border border-white/10">
             <img
-              src="https://i.postimg.cc/85pQNJKs/Screenshot-2026-02-11-at-12-27-10-AM.png"
+              src="https://i.postimg.cc/jjFxghdb/book-cover-Ck3q7dk0.jpg"
               alt="Biblical Geography Book Preview"
               className="w-full h-auto object-cover"
             />
