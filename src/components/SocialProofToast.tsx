@@ -1,0 +1,102 @@
+'use client';
+
+import { CheckCircle2, X } from 'lucide-react';
+import React, { useCallback, useEffect, useState } from 'react';
+import { cn } from '@/lib/utils';
+
+const purchases = [
+  { name: 'Joseph', location: 'Texas' },
+  { name: 'Maria', location: 'Florida' },
+  { name: 'Daniel', location: 'California' },
+  { name: 'Sarah', location: 'New York' },
+  { name: 'Michael', location: 'Arizona' },
+  { name: 'Rebecca', location: 'Illinois' },
+  { name: 'David', location: 'Georgia' },
+  { name: 'Esther', location: 'New Jersey' },
+  { name: 'John', location: 'Ohio' },
+  { name: 'Ruth', location: 'North Carolina' },
+  { name: 'Samuel', location: 'Pennsylvania' },
+  { name: 'Leah', location: 'Michigan' },
+  { name: 'Benjamin', location: 'Virginia' },
+  { name: 'Rachel', location: 'Washington' },
+  { name: 'Aaron', location: 'Massachusetts' },
+  { name: 'Hannah', location: 'Colorado' },
+  { name: 'Joshua', location: 'Tennessee' },
+  { name: 'Abigail', location: 'Indiana' },
+  { name: 'Elijah', location: 'Missouri' },
+  { name: 'Deborah', location: 'Wisconsin' },
+];
+
+type Purchase = {
+  name: string;
+  location: string;
+};
+
+export function SocialProofToast() {
+  const [currentPurchase, setCurrentPurchase] = useState<Purchase | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [lastIndex, setLastIndex] = useState(-1);
+
+  const showRandomPurchase = useCallback(() => {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * purchases.length);
+    } while (randomIndex === lastIndex);
+
+    setCurrentPurchase(purchases[randomIndex]);
+    setLastIndex(randomIndex);
+    setIsVisible(true);
+
+    const hideTimeout = setTimeout(() => {
+      setIsVisible(false);
+    }, 4000);
+  }, [lastIndex]);
+
+  useEffect(() => {
+    // Show the first toast after a short delay
+    const initialTimeout = setTimeout(showRandomPurchase, 3000);
+    const interval = setInterval(showRandomPurchase, 7000);
+    return () => {
+      clearTimeout(initialTimeout);
+      clearInterval(interval);
+    };
+  }, [showRandomPurchase]);
+
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
+  if (!currentPurchase) {
+    return null;
+  }
+
+  return (
+    <div
+      className={cn(
+        'fixed bottom-4 left-4 z-50 w-full max-w-xs rounded-xl border border-white/10 bg-[#11151B] p-4 shadow-lg transition-all duration-500 ease-in-out motion-reduce:transition-none',
+        'data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in data-[state=closed]:slide-out-to-bottom-2 data-[state=closed]:slide-out-to-left-2 data-[state=open]:slide-in-from-bottom-2 data-[state=open]:slide-in-from-left-2'
+      )}
+      data-state={isVisible ? 'open' : 'closed'}
+      role="status"
+      aria-live="polite"
+    >
+      <div className="flex items-start gap-3">
+        <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-green-400 mt-0.5" />
+        <div className="flex-grow">
+          <p className="text-sm font-medium text-white">
+            {currentPurchase.name} from {currentPurchase.location}
+            <span className="text-gray-400"> just purchased</span>
+          </p>
+          <p className="text-xs text-gray-500 mt-1">Just now</p>
+        </div>
+        <button
+          onClick={handleClose}
+          className="absolute top-2 right-2 rounded-full p-1 text-gray-400 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+        >
+          <span className="sr-only">Close</span>
+          <X className="h-4 w-4" />
+        </button>
+      </div>
+    </div>
+  );
+}
