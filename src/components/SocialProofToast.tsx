@@ -35,22 +35,16 @@ type Purchase = {
 export function SocialProofToast() {
   const [currentPurchase, setCurrentPurchase] = useState<Purchase | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [lastIndex, setLastIndex] = useState(-1);
 
   const showRandomPurchase = useCallback(() => {
-    let randomIndex;
-    do {
-      randomIndex = Math.floor(Math.random() * purchases.length);
-    } while (randomIndex === lastIndex);
-
+    const randomIndex = Math.floor(Math.random() * purchases.length);
     setCurrentPurchase(purchases[randomIndex]);
-    setLastIndex(randomIndex);
     setIsVisible(true);
 
-    const hideTimeout = setTimeout(() => {
+    setTimeout(() => {
       setIsVisible(false);
     }, 4000);
-  }, [lastIndex]);
+  }, []);
 
   useEffect(() => {
     // Show the first toast after a short delay
