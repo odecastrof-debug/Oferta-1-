@@ -15,16 +15,6 @@ export function HeroSection() {
           Take a journey through every biblical scenario from <span className="text-primary">Genesis to Revelation</span>
         </h1>
 
-        <div className="mt-8 flex justify-center">
-            <Image
-                src="https://id-preview--b75d8225-6137-4251-9037-445b38b9b098.lovable.app/assets/book-cover-Ck3q7dk0.jpg"
-                alt="Biblical Geography Book Preview"
-                width={400}
-                height={500}
-                className="w-full h-auto rounded-2xl"
-            />
-        </div>
-
         <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto">
           A deep and accessible visual guide with over 280 cinematic images that reveal the settings, landscapes, and locations where each biblical event occurred.
         </p>
