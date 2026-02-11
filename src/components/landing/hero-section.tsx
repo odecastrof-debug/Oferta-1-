@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Zap } from "lucide-react";
-import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 
 export function HeroSection() {
   return (
@@ -19,29 +15,22 @@ export function HeroSection() {
           A deep and accessible visual guide with over 280 cinematic images that reveal the settings, landscapes, and locations where each biblical event occurred.
         </p>
 
-        <div className="mt-12 flex justify-center">
-            <div className="relative">
-                <div className="bg-black/30 p-2 sm:p-3 rounded-2xl shadow-2xl shadow-primary/10 border border-white/10">
-                      <div className="relative">
-                        <Image
-                            src="https://i.postimg.cc/85pQNJKs/Screenshot-2026-02-11-at-12-27-10-AM.png"
-                            alt="Biblical Geography Book Preview"
-                            width={400}
-                            height={500}
-                            className="w-full h-auto rounded-2xl"
-                        />
-                         <Badge className="absolute top-4 right-4 bg-primary/80 text-primary-foreground py-1 px-3 text-xs border border-amber-300/50">
-                            500+ PAGES
-                        </Badge>
-                      </div>
-                </div>
-                 <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-max">
-                    <Button variant="secondary" className="bg-green-900/50 text-green-300 border border-green-700 hover:bg-green-900/70 backdrop-blur-sm">
-                        <Zap className="w-4 h-4 mr-2" />
-                        Instant Access after purchase
-                    </Button>
-                </div>
+        <div className="mt-12">
+          <div className="relative w-full max-w-xl mx-auto rounded-2xl overflow-hidden border border-white/10">
+            <img
+              src="https://i.postimg.cc/85pQNJKs/Screenshot-2026-02-11-at-12-27-10-AM.png"
+              alt="Biblical Geography Book Preview"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute top-4 right-4 bg-[#C9AB6A] text-black px-4 py-1 rounded-full text-sm font-semibold">
+              500+ PAGES
             </div>
+          </div>
+          <div className="mt-4 flex justify-center">
+            <div className="bg-[#35D07F] text-black px-6 py-2 rounded-lg font-medium">
+              Instant Access after purchase
+            </div>
+          </div>
         </div>
       </div>
     </section>
