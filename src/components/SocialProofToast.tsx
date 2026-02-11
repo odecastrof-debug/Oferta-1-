@@ -1,7 +1,7 @@
 'use client';
 
 import { CheckCircle2, X } from 'lucide-react';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const purchases = [
@@ -36,28 +36,61 @@ export function SocialProofToast() {
   const [currentPurchase, setCurrentPurchase] = useState<Purchase | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const showRandomPurchase = useCallback(() => {
-    const randomIndex = Math.floor(Math.random() * purchases.length);
-    setCurrentPurchase(purchases[randomIndex]);
-    setIsVisible(true);
+  const toastCountRef = useRef(0);
+  const purchaseIndexRef = useRef(0);
+  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const nextToastTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-    setTimeout(() => {
+  const showNextToast = useCallback(() => {
+    if (toastCountRef.current >= 3) {
+      return;
+    }
+
+    // Clear any previously scheduled "next toast" timeout
+    if (nextToastTimeoutRef.current) {
+      clearTimeout(nextToastTimeoutRef.current);
+    }
+
+    const purchase = purchases[purchaseIndexRef.current % purchases.length];
+    purchaseIndexRef.current += 1;
+
+    setCurrentPurchase(purchase);
+    setIsVisible(true);
+    toastCountRef.current += 1;
+
+    hideTimeoutRef.current = setTimeout(() => {
       setIsVisible(false);
+      // Wait 7 seconds after hiding to show the next one
+      nextToastTimeoutRef.current = setTimeout(showNextToast, 7000);
     }, 4000);
   }, []);
 
   useEffect(() => {
     // Show the first toast after a short delay
-    const initialTimeout = setTimeout(showRandomPurchase, 3000);
-    const interval = setInterval(showRandomPurchase, 7000);
+    const initialTimeout = setTimeout(showNextToast, 3000);
+
     return () => {
       clearTimeout(initialTimeout);
-      clearInterval(interval);
+      if (hideTimeoutRef.current) {
+        clearTimeout(hideTimeoutRef.current);
+      }
+      if (nextToastTimeoutRef.current) {
+        clearTimeout(nextToastTimeoutRef.current);
+      }
     };
-  }, [showRandomPurchase]);
+  }, [showNextToast]);
 
   const handleClose = () => {
     setIsVisible(false);
+    // Clear the hide timeout since we are manually closing
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+    }
+    // Schedule the next toast
+    if (nextToastTimeoutRef.current) {
+      clearTimeout(nextToastTimeoutRef.current);
+    }
+    nextToastTimeoutRef.current = setTimeout(showNextToast, 7000);
   };
 
   if (!currentPurchase) {
