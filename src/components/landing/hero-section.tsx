@@ -22,7 +22,7 @@ export function HeroSection() {
               alt="Biblical Geography Book Preview"
               className="w-full h-auto object-cover"
             />
-            <div className="absolute top-4 right-4 bg-[#C9AB6A] text-black px-4 py-1 rounded-full text-sm font-semibold">
+            <div className="absolute top-3 right-3 bg-[#C9AB6A] text-black px-3 py-1 rounded-full text-xs font-semibold">
               500+ PAGES
             </div>
           </div>
