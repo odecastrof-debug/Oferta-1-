@@ -45,7 +45,7 @@
     {
       "id": "hero-book-cover",
       "description": "The cover of the Biblical Geography book shown inside a tablet frame on a wooden table.",
-      "imageUrl": "https://images.unsplash.com/photo-1656746337411-eb66d1163fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib29rJTIwdGFibGV8ZW58MHx8fHwxNzcwNzIyMzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://id-preview--b75d8225-6137-4251-9037-445b38b9b098.lovable.app/assets/book-cover-Ck3q7dk0.jpg",
       "imageHint": "book table"
     },
     {
@@ -68,9 +68,9 @@
     },
     {
       "id": "carousel-3d-recons",
-      "description": "3D reconstruction of an ancient city.",
-      "imageUrl": "https://images.unsplash.com/photo-1613425383594-152865d39366?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbmNpZW50JTIwY2l0eSUyMDNkLXJlbmRlcnxlbnwwfHx8fDE3NzA3MjIyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "3d reconstruction"
+      "description": "3D reconstruction of the parting of the Red Sea.",
+      "imageUrl": "https://biblical-geography.netlify.app/images/Mar%20Vermelho.jpeg",
+      "imageHint": "red sea parting"
     }
   ]
 }
