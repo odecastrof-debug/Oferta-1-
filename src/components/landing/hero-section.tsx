@@ -24,7 +24,7 @@ export function HeroSection() {
                 <div className="bg-black/30 p-2 sm:p-3 rounded-2xl shadow-2xl shadow-primary/10 border border-white/10">
                       <div className="relative">
                         <Image
-                            src="https://id-preview--b75d8225-6137-4251-9037-445b38b9b098.lovable.app/assets/book-cover-Ck3q7dk0.jpg"
+                            src="https://i.postimg.cc/85pQNJKs/Screenshot-2026-02-11-at-12-27-10-AM.png"
                             alt="Biblical Geography Book Preview"
                             width={400}
                             height={500}
