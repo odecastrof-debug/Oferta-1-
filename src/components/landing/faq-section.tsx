@@ -1,3 +1,5 @@
+'use client';
+
 import {
     Accordion,
     AccordionContent,
@@ -34,4 +36,3 @@ import { useTranslations } from "next-intl";
       </section>
     )
   }
-  

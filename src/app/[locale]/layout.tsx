@@ -75,7 +75,7 @@ fbq('track', 'PageView');
         {/* TikTok Pixel Code End */}
       </head>
       <body className="font-body antialiased" suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <TikTokPageView />
           {children}
           <Toaster />
