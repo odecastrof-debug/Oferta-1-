@@ -1,41 +1,37 @@
-'use client';
-
 import { Card } from '@/components/ui/card';
 import { Layers, Landmark, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 
-export function ChallengeSection() {
-  const t = useTranslations('Challenge');
-
-  const features = [
+const features = [
     {
       icon: Layers,
-      title: t('features.geography.title'),
-      description: t('features.geography.description')
+      title: "Detailed Physical Geography",
+      description: "Relief, climate, vegetation, rivers and landscapes recreated with scientific precision."
     },
     {
       icon: Landmark,
-      title: t('features.archaeology.title'),
-      description: t('features.archaeology.description')
+      title: "Archaeological Context",
+      description: "Ruins and structures based on documented archaeological discoveries."
     },
     {
       icon: Globe,
-      title: t('features.cartography.title'),
-      description: t('features.cartography.description')
+      title: "Academic Cartography",
+      description: "Maps and routes validated by biblical studies specialists."
     }
   ];
+
+export function ChallengeSection() {
 
   return (
     <section id="detailed-features" className="py-16 sm:py-24 bg-background">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
-                {t('title')}
+                What you'll find in the Biblical Geography material is unique
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-                {t('subtitle')}
+                Our images are produced based on 3 pillars:
             </p>
         </div>
 
@@ -58,7 +54,7 @@ export function ChallengeSection() {
         </div>
         
         <div className="mt-12 text-center">
-            <p className="text-lg italic text-muted-foreground">{t('quote')}</p>
+            <p className="text-lg italic text-muted-foreground">"You will not find anything like this anywhere else."</p>
         </div>
 
         <div className="mt-20 flex justify-center items-center gap-8">
@@ -70,7 +66,7 @@ export function ChallengeSection() {
             </div>
             <Button asChild size="lg" className="px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90">
                 <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
-                    {t('cta')}
+                    Buy Now
                 </Link>
             </Button>
         </div>

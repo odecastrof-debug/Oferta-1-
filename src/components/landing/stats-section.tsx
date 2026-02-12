@@ -1,14 +1,9 @@
-'use client';
-
-import { useTranslations } from "next-intl";
-
 export function StatsSection() {
-  const t = useTranslations('Stats');
   
   const stats = [
-    { number: '280+', label: t('images') },
-    { number: '66', label: t('books') },
-    { number: '100%', label: t('accuracy') },
+    { number: '280+', label: 'High-resolution images' },
+    { number: '66', label: 'Books covered' },
+    { number: '100%', label: 'Historical accuracy' },
   ];
   
   return (
