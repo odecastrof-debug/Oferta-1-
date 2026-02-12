@@ -5,13 +5,14 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export function StickyCtaBar() {
+  const t = useTranslations('StickyCta');
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Show the bar only after scrolling past 300px
       if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
@@ -21,7 +22,6 @@ export function StickyCtaBar() {
 
     window.addEventListener('scroll', toggleVisibility);
 
-    // Cleanup the event listener on component unmount
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
@@ -40,7 +40,7 @@ export function StickyCtaBar() {
         </div>
         <Button asChild size="lg" className="shrink-0">
           <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
-            Get it now
+            {t('cta')}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </Button>

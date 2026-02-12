@@ -1,0 +1,226 @@
+
+{
+  "Metadata": {
+    "title": "Atlas Biblique",
+    "description": "Comprenez la Bible comme jamais auparavant, en voyant où et comment chaque histoire s'est déroulée."
+  },
+  "Header": {
+    "title": "Géographie Biblique",
+    "subtitle": "de la Genèse à l'Apocalypse",
+    "cta": "Obtenir maintenant",
+    "languageSelector": "Langue"
+  },
+  "Hero": {
+    "pretitle": "Reconnu comme le matériel le plus complet du marché",
+    "title_part1": "Faites un voyage à travers chaque scénario biblique de la ",
+    "title_highlight": "Genèse à l'Apocalypse",
+    "description": "Un guide visuel approfondi et accessible avec plus de 280 images cinématographiques qui révèlent les décors, les paysages et les lieux où chaque événement biblique s'est produit.",
+    "badge": "500+ PAGES",
+    "access_note": "Accès instantané après l'achat"
+  },
+  "Stats": {
+    "images": "Images en haute résolution",
+    "books": "Livres couverts",
+    "accuracy": "Précision historique"
+  },
+  "CtaButton": {
+    "cta": "Obtenez-le pour 5,90 $",
+    "subtext": "Téléchargement instantané • Accès à vie"
+  },
+  "VisualValue": {
+    "title": "Comprenez la Bible comme vous ne l'avez jamais fait",
+    "description": "Le matériel de Géographie Biblique est un guide visuel complet pour comprendre les décors des Écritures.",
+    "features": [
+      "Les 66 livres de la Bible couverts — rien n'est laissé de côté, de la Genèse à l'Apocalypse",
+      "Cartes et itinéraires des voyages bibliques",
+      "Suivez les traces d'Abraham, Moïse et Paul",
+      "Reconstructions 3D de temples et de villes",
+      "Voyez à quoi ressemblaient les lieux à leur époque",
+      "Photos réelles des sites sacrés aujourd'hui",
+      "Connectez le passé avec le présent"
+    ],
+    "badge": "Téléchargement instantané + Mises à jour à vie"
+  },
+  "Gallery": {
+    "title": "Des images qui donnent vie à la Bible",
+    "description": "Ayez un aperçu de ce que vous verrez dans le matériel de Géographie Biblique :",
+    "items": {
+      "eden": { "label": "Jardin d'Éden", "reference": "Genèse" },
+      "red_sea": { "label": "Mer Rouge", "reference": "Exode" },
+      "jerusalem": { "label": "Jérusalem antique", "reference": "Rois" },
+      "jordan_river": { "label": "Le Jourdain", "reference": "Josué" },
+      "galilee": { "label": "Mer de Galilée", "reference": "Évangiles" }
+    },
+    "quote": "« Ta parole est une lampe à mes pieds, et une lumière sur mon sentier. »",
+    "quote_source": "Psaume 119:105"
+  },
+  "WaysToUnderstand": {
+    "pretitle": "À l'intérieur du matériel",
+    "title": "Différents types de contenu visuel",
+    "items": {
+      "cartography": "Cartographie",
+      "real_locations": "Lieux Réels",
+      "reconstructions": "Reconstructions 3D",
+      "landscapes": "Paysages Bibliques"
+    }
+  },
+  "Challenge": {
+    "title": "Ce que vous trouverez dans le matériel de Géographie Biblique est unique",
+    "subtitle": "Nos images sont produites sur la base de 3 piliers :",
+    "features": {
+      "geography": {
+        "title": "Géographie Physique Détaillée",
+        "description": "Relief, climat, végétation, rivières et paysages recréés avec une précision scientifique."
+      },
+      "archaeology": {
+        "title": "Contexte Archéologique",
+        "description": "Ruines et structures basées sur des découvertes archéologiques documentées."
+      },
+      "cartography": {
+        "title": "Cartographie Académique",
+        "description": "Cartes et itinéraires validés par des spécialistes des études bibliques."
+      }
+    },
+    "quote": "\"Vous ne trouverez rien de tel nulle part ailleurs.\"",
+    "cta": "Acheter maintenant"
+  },
+  "Modules": {
+    "title": "6 modules couvrant toute l'histoire biblique",
+    "items": {
+      "patriarchs": {
+        "title": "Module 01 — Ère des Patriarches",
+        "images": 45,
+        "content": ["La Création et le Jardin d'Éden", "Le Déluge et l'Arche de Noé", "Abraham, Isaac et Jacob", "Joseph en Égypte"]
+      },
+      "exodus": {
+        "title": "Module 02 — Exode et Désert",
+        "images": 50,
+        "content": ["Les Plaies d'Égypte", "La Traversée de la Mer Rouge", "Le Mont Sinaï et les Commandements", "40 ans dans le désert"]
+      },
+      "conquest": {
+        "title": "Module 03 — Conquête et Royaume",
+        "images": 55,
+        "content": ["Josué et la Terre Promise", "Ère des Juges", "Rois David et Salomon", "Le Temple de Jérusalem"]
+      },
+      "prophets": {
+        "title": "Module 04 — Prophètes et Exil",
+        "images": 40,
+        "content": ["Élie et Élisée", "Chute d'Israël et de Juda", "Exil à Babylone", "Retour à Jérusalem"]
+      },
+      "jesus": {
+        "title": "Module 05 — Vie de Jésus",
+        "images": 60,
+        "content": ["Bethléem et Nazareth", "Ministère en Galilée", "Jérusalem au temps de Jésus", "Crucifixion et Résurrection"]
+      },
+      "early_christianity": {
+        "title": "Module 06 — Christianisme Primitif",
+        "images": 35,
+        "content": ["Voyages missionnaires de Paul", "Églises en Asie Mineure", "Rome antique", "Visions de l'Apocalypse"]
+      }
+    },
+    "images_count": "images",
+    "quote": "« Heureux ceux qui ont faim et soif de la justice, car ils seront rassasiés. »",
+    "quote_source": "Matthieu 5:6"
+  },
+  "Testimonial": {
+    "quote": "« Je n'avais jamais rien vu de tel. Les images sont d'une qualité époustouflante et m'ont aidé à comprendre des passages que je lis depuis 20 ans sans vraiment saisir le contexte. »",
+    "author": "Pasteur Michael S.",
+    "location": "Dallas, Texas"
+  },
+  "WhatYouGet": {
+    "title": "Tout ceci est à vous aujourd'hui :",
+    "badge": "Inclus sans frais supplémentaires",
+    "deliverables": [
+      "E-book complet — 500+ pages à explorer",
+      "280+ images qui transforment votre lecture",
+      "7 bonus exclusifs qui approfondissent votre étude",
+      "Accès instantané — téléchargez immédiatement",
+      "Mises à jour à vie sans frais supplémentaires",
+      "Garantie complète de 30 jours — sans risque pour vous"
+    ]
+  },
+  "Bonuses": {
+    "title": "7 outils qui approfondissent votre étude",
+    "header": "Inclus sans frais supplémentaires",
+    "items": [
+      { "name": "Comprendre qui étaient les ennemis d'Israël", "value": 39 },
+      { "name": "Visualiser toute l'histoire biblique dans l'ordre", "value": 29 },
+      { "name": "Localiser n'importe quel lieu biblique instantanément", "value": 35 },
+      { "name": "Découvrir la signification de chaque lieu sacré", "value": 25 },
+      { "name": "Visiter le Temple de Salomon pièce par pièce", "value": 19 },
+      { "name": "Approfondir votre étude avec des exercices guidés", "value": 19 },
+      { "name": "Recevoir de nouvelles images sans payer plus", "value": "Inestimable" }
+    ],
+    "free": "GRATUIT",
+    "priceless": "Inestimable"
+  },
+  "Pricing": {
+    "title": "Offre à durée limitée",
+    "summary": [
+      "280+ images qui transforment votre lecture",
+      "Les 66 livres couverts",
+      "7 bonus exclusifs (valeur de 166 $US)",
+      "Accès instantané",
+      "Mises à jour à vie"
+    ],
+    "payment_note": "Paiement unique · Accès à vie",
+    "cta": "Acheter maintenant — 5,90 $US",
+    "features": {
+      "secure": "Paiement sécurisé",
+      "instant": "Accès instantané",
+      "payment_methods": "Carte ou PayPal"
+    }
+  },
+  "Guarantee": {
+    "title": "Garantie Complète de 30 Jours",
+    "description": "Si dans les 30 premiers jours, vous ne pensez pas que ce matériel vous a aidé à mieux comprendre la Bible grâce aux images et au contexte visuel, nous vous rembourserons 100% de votre argent. Sans poser de questions. Sans tracas.",
+    "risk_note": "Le risque est entièrement nôtre."
+  },
+  "FAQ": {
+    "title": "Avez-vous des questions ?",
+    "items": [
+      {
+        "question": "Comment puis-je recevoir le matériel ?",
+        "answer": "Instantanément ! Après la confirmation de votre paiement, vous recevrez un e-mail avec un lien pour télécharger tous les matériaux. Vous pouvez y accéder sur n'importe quel appareil : ordinateur, tablette ou smartphone."
+      },
+      {
+        "question": "Dans quel format est le matériel ?",
+        "answer": "L'e-book principal est au format PDF, ce qui le rend compatible avec tous les appareils. Les images sont au format JPG haute résolution, et les autres bonus peuvent être en PDF ou dans d'autres formats accessibles."
+      },
+      {
+        "question": "Puis-je imprimer le matériel ?",
+        "answer": "Oui, vous pouvez imprimer l'e-book et les images pour votre usage personnel ou pour des groupes d'étude. Le format haute résolution assure une excellente qualité d'impression."
+      },
+      {
+        "question": "Combien de temps ai-je accès ?",
+        "answer": "Vous avez un accès à vie à tous les matériaux, y compris toutes les futures mises à jour. Payez une fois et profitez du contenu pour toujours."
+      },
+      {
+        "question": "Est-ce sécuritaire d'acheter ?",
+        "answer": "Absolument. Notre plateforme de paiement utilise une sécurité de pointe pour protéger vos données. Nous offrons également une garantie de remboursement de 30 jours, votre achat est donc entièrement sans risque."
+      }
+    ]
+  },
+  "FinalCta": {
+    "title": "Prêt à voir la Bible avec de nouveaux yeux ?",
+    "description": "Des milliers d'étudiants ont déjà découvert une manière plus claire d'étudier les Écritures. Aujourd'hui, vous pouvez être l'un d'entre eux, sans risque.",
+    "choice_text": "Vous pouvez continuer à lire la Bible comme un simple texte…",
+    "choice_visual": "ou enfin voir où tout s'est passé.",
+    "cta": "Explorez la Bible sur la carte maintenant",
+    "guarantees": "Accès instantané · Paiement unique · Paiement 100% sécurisé · Garantie complète de 30 jours"
+  },
+  "Footer": {
+    "copyright": "Géographie Biblique © {year} — Tous droits réservés",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "contact": "Contact"
+  },
+  "SocialProof": {
+    "purchase_notification": "{name} de {location} vient d'acheter",
+    "time": "À l'instant",
+    "close": "Fermer"
+  },
+  "StickyCta": {
+    "cta": "Obtenir maintenant"
+  }
+}

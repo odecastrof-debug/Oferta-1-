@@ -12,15 +12,17 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
-const carouselItems = [
-  { id: 'carousel-historical-cartography', title: 'Cartography' },
-  { id: 'carousel-real-locations', title: 'Real Locations' },
-  { id: 'carousel-3d-recons', title: '3D Reconstructions' },
-  { id: 'gallery-galilee', title: 'Biblical Landscapes' },
+const carouselItemData = [
+  { id: 'carousel-historical-cartography', key: 'cartography' },
+  { id: 'carousel-real-locations', key: 'real_locations' },
+  { id: 'carousel-3d-recons', key: 'reconstructions' },
+  { id: 'gallery-galilee', key: 'landscapes' },
 ];
 
 export function WaysToUnderstandSection() {
+  const t = useTranslations('WaysToUnderstand');
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -46,10 +48,10 @@ export function WaysToUnderstandSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold text-primary tracking-widest uppercase">
-            Inside the material
+            {t('pretitle')}
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-            Different types of visual content
+            {t('title')}
           </h2>
         </div>
 
@@ -63,7 +65,7 @@ export function WaysToUnderstandSection() {
             className="w-full max-w-6xl mx-auto"
           >
             <CarouselContent className="-ml-4">
-              {carouselItems.map((item, index) => {
+              {carouselItemData.map((item, index) => {
                 const imageData = PlaceHolderImages.find(
                   (img) => img.id === item.id
                 );
@@ -78,7 +80,7 @@ export function WaysToUnderstandSection() {
                         <CardContent className="relative aspect-[3/2] p-0">
                           <Image
                             src={imageData.imageUrl}
-                            alt={imageData.description}
+                            alt={t(`items.${item.key}`)}
                             fill
                             className="object-cover transition-transform duration-300 group-hover:scale-105"
                             data-ai-hint={imageData.imageHint}
@@ -86,7 +88,7 @@ export function WaysToUnderstandSection() {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-lg" />
                           <div className="absolute bottom-0 left-0 p-6">
                             <h3 className="text-lg font-semibold text-white tracking-wider font-headline">
-                              {item.title.toUpperCase()}
+                              {t(`items.${item.key}`).toUpperCase()}
                             </h3>
                           </div>
                         </CardContent>

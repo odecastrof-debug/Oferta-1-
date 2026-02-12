@@ -3,19 +3,13 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-const features = [
-  "All 66 books of the Bible covered — nothing left out, from Genesis to Revelation",
-  "Maps and routes of biblical journeys",
-  "Follow in the footsteps of Abraham, Moses, and Paul",
-  "3D reconstructions of temples and cities",
-  "See how places looked in their time",
-  "Real photos of sacred sites today",
-  "Connect the past with the present",
-];
+import { useTranslations } from 'next-intl';
 
 export function VisualValueSection() {
+  const t = useTranslations('VisualValue');
   const visualImage = PlaceHolderImages.find(img => img.id === 'visual-value-image');
+  const features = t.raw('features') as string[];
+
 
   return (
     <section id="visual-value" className="py-16 sm:py-24">
@@ -23,10 +17,10 @@ export function VisualValueSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
-              Understand the Bible as you never have before
+              {t('title')}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              The Biblical Geography material is a complete visual guide to understanding the settings of the Scriptures.
+              {t('description')}
             </p>
             <ul className="mt-8 space-y-4">
               {features.map((feature, index) => (
@@ -37,7 +31,7 @@ export function VisualValueSection() {
               ))}
             </ul>
             <Badge className="mt-8 text-base py-2 px-4 bg-accent text-accent-foreground">
-              Instant download + Lifetime updates
+              {t('badge')}
             </Badge>
           </div>
           <div className="flex justify-center">

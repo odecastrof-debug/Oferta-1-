@@ -1,0 +1,226 @@
+
+{
+  "Metadata": {
+    "title": "Biblical Atlas",
+    "description": "Understand the Bible like never before, by seeing where and how each story happened."
+  },
+  "Header": {
+    "title": "Biblical Geography",
+    "subtitle": "from Genesis to Revelation",
+    "cta": "Get It Now",
+    "languageSelector": "Language"
+  },
+  "Hero": {
+    "pretitle": "Recognized as the most complete material on the market",
+    "title_part1": "Take a journey through every biblical scenario from ",
+    "title_highlight": "Genesis to Revelation",
+    "description": "A deep and accessible visual guide with over 280 cinematic images that reveal the settings, landscapes, and locations where each biblical event occurred.",
+    "badge": "500+ PAGES",
+    "access_note": "Instant Access after purchase"
+  },
+  "Stats": {
+    "images": "High-resolution images",
+    "books": "Books covered",
+    "accuracy": "Historical accuracy"
+  },
+  "CtaButton": {
+    "cta": "Get it for $5.90",
+    "subtext": "Instant download • Lifetime access"
+  },
+  "VisualValue": {
+    "title": "Understand the Bible as you never have before",
+    "description": "The Biblical Geography material is a complete visual guide to understanding the settings of the Scriptures.",
+    "features": [
+      "All 66 books of the Bible covered — nothing left out, from Genesis to Revelation",
+      "Maps and routes of biblical journeys",
+      "Follow in the footsteps of Abraham, Moses, and Paul",
+      "3D reconstructions of temples and cities",
+      "See how places looked in their time",
+      "Real photos of sacred sites today",
+      "Connect the past with the present"
+    ],
+    "badge": "Instant download + Lifetime updates"
+  },
+  "Gallery": {
+    "title": "Images that bring the Bible to life",
+    "description": "Get a taste of what you will see in the Biblical Geography material:",
+    "items": {
+      "eden": { "label": "Garden of Eden", "reference": "Genesis" },
+      "red_sea": { "label": "Red Sea", "reference": "Exodus" },
+      "jerusalem": { "label": "Ancient Jerusalem", "reference": "Kings" },
+      "jordan_river": { "label": "The Jordan River", "reference": "Joshua" },
+      "galilee": { "label": "Sea of Galilee", "reference": "Gospels" }
+    },
+    "quote": "“Your word is a lamp for my feet, a light on my path.”",
+    "quote_source": "Psalm 119:105"
+  },
+  "WaysToUnderstand": {
+    "pretitle": "Inside the material",
+    "title": "Different types of visual content",
+    "items": {
+      "cartography": "Cartography",
+      "real_locations": "Real Locations",
+      "reconstructions": "3D Reconstructions",
+      "landscapes": "Biblical Landscapes"
+    }
+  },
+  "Challenge": {
+    "title": "What you'll find in the Biblical Geography material is unique",
+    "subtitle": "Our images are produced based on 3 pillars:",
+    "features": {
+      "geography": {
+        "title": "Detailed Physical Geography",
+        "description": "Relief, climate, vegetation, rivers and landscapes recreated with scientific precision."
+      },
+      "archaeology": {
+        "title": "Archaeological Context",
+        "description": "Ruins and structures based on documented archaeological discoveries."
+      },
+      "cartography": {
+        "title": "Academic Cartography",
+        "description": "Maps and routes validated by biblical studies specialists."
+      }
+    },
+    "quote": "\"You will not find anything like this anywhere else.\"",
+    "cta": "Buy Now"
+  },
+  "Modules": {
+    "title": "6 modules covering all of biblical history",
+    "items": {
+      "patriarchs": {
+        "title": "Module 01 — Era of the Patriarchs",
+        "images": 45,
+        "content": ["Creation and the Garden of Eden", "The Flood and Noah’s Ark", "Abraham, Isaac, and Jacob", "Joseph in Egypt"]
+      },
+      "exodus": {
+        "title": "Module 02 — Exodus and Wilderness",
+        "images": 50,
+        "content": ["The Plagues of Egypt", "Crossing the Red Sea", "Mount Sinai and the Commandments", "40 years in the wilderness"]
+      },
+      "conquest": {
+        "title": "Module 03 — Conquest and Kingdom",
+        "images": 55,
+        "content": ["Joshua and the Promised Land", "Era of the Judges", "Kings David and Solomon", "The Temple of Jerusalem"]
+      },
+      "prophets": {
+        "title": "Module 04 — Prophets and Exile",
+        "images": 40,
+        "content": ["Elijah and Elisha", "Fall of Israel and Judah", "Babylonian exile", "Return to Jerusalem"]
+      },
+      "jesus": {
+        "title": "Module 05 — Life of Jesus",
+        "images": 60,
+        "content": ["Bethlehem and Nazareth", "Ministry in Galilee", "Jerusalem in the time of Jesus", "Crucifixion and Resurrection"]
+      },
+      "early_christianity": {
+        "title": "Module 06 — Early Christianity",
+        "images": 35,
+        "content": ["Paul’s missionary journeys", "Churches in Asia Minor", "Ancient Rome", "Visions of Revelation"]
+      }
+    },
+    "images_count": "images",
+    "quote": "“Blessed are those who hunger and thirst for righteousness, for they will be filled.”",
+    "quote_source": "Matthew 5:6"
+  },
+  "Testimonial": {
+    "quote": "“I had never seen anything like it. The images are of stunning quality and helped me understand passages I’ve been reading for 20 years without truly grasping the context.”",
+    "author": "Pastor Michael S.",
+    "location": "Dallas, Texas"
+  },
+  "WhatYouGet": {
+    "title": "All of this is yours today:",
+    "badge": "Included at no extra cost",
+    "deliverables": [
+      "Complete e-book — 500+ pages to explore",
+      "280+ images that transform your reading",
+      "7 exclusive bonuses that deepen your study",
+      "Instant access — download immediately",
+      "Lifetime updates at no extra cost",
+      "30-day full guarantee — risk-free for you"
+    ]
+  },
+  "Bonuses": {
+    "title": "7 tools that deepen your study",
+    "header": "Included at no extra cost",
+    "items": [
+      { "name": "Understand who Israel's enemies were", "value": 39 },
+      { "name": "Visualize all of biblical history in order", "value": 29 },
+      { "name": "Locate any biblical place instantly", "value": 35 },
+      { "name": "Discover the meaning of each sacred place", "value": 25 },
+      { "name": "Tour Solomon’s Temple room by room", "value": 19 },
+      { "name": "Deepen your study with guided exercises", "value": 19 },
+      { "name": "Receive new images without paying more", "value": "Priceless" }
+    ],
+    "free": "FREE",
+    "priceless": "Priceless"
+  },
+  "Pricing": {
+    "title": "Limited time offer",
+    "summary": [
+      "280+ images that transform your reading",
+      "All 66 books covered",
+      "7 exclusive bonuses (US$166 value)",
+      "Instant access",
+      "Lifetime updates"
+    ],
+    "payment_note": "One-time payment · Lifetime access",
+    "cta": "Buy now — US$5.90",
+    "features": {
+      "secure": "Secure payment",
+      "instant": "Instant access",
+      "payment_methods": "Card or PayPal"
+    }
+  },
+  "Guarantee": {
+    "title": "30-Day Full Guarantee",
+    "description": "If within the first 30 days you don’t feel that this material helped you understand the Bible better through images and visual context, we’ll refund 100% of your money. No questions asked. No hassle.",
+    "risk_note": "The risk is completely ours."
+  },
+  "FAQ": {
+    "title": "Have questions?",
+    "items": [
+      {
+        "question": "How do I receive the material?",
+        "answer": "Instantly! After your payment is confirmed, you will receive an email with a link to download all the materials. You can access it on any device: computer, tablet, or smartphone."
+      },
+      {
+        "question": "What format is the material in?",
+        "answer": "The main e-book is in PDF format, making it compatible with all devices. The images are in high-resolution JPG format, and other bonuses may be in PDF or other accessible formats."
+      },
+      {
+        "question": "Can I print the material?",
+        "answer": "Yes, you can print the e-book and images for your personal use or study groups. The high-resolution format ensures excellent print quality."
+      },
+      {
+        "question": "How long do I have access?",
+        "answer": "You have lifetime access to all materials, including all future updates. Pay once and enjoy the content forever."
+      },
+      {
+        "question": "Is it safe to buy?",
+        "answer": "Absolutely. Our payment platform uses state-of-the-art security to protect your data. We also offer a 30-day money-back guarantee, so your purchase is completely risk-free."
+      }
+    ]
+  },
+  "FinalCta": {
+    "title": "Ready to see the Bible with new eyes?",
+    "description": "Thousands of students have already discovered a clearer way to study the Scriptures. Today you can be one of them — risk-free.",
+    "choice_text": "You can keep reading the Bible as just text…",
+    "choice_visual": "or finally see where it all happened.",
+    "cta": "Explore the Bible on the map now",
+    "guarantees": "Instant access · One-time payment · 100% secure payment · 30-day full guarantee"
+  },
+  "Footer": {
+    "copyright": "Biblical Geography © {year} — All rights reserved",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "contact": "Contact"
+  },
+  "SocialProof": {
+    "purchase_notification": "{name} from {location} just purchased",
+    "time": "Just now",
+    "close": "Close"
+  },
+  "StickyCta": {
+    "cta": "Get it now"
+  }
+}
