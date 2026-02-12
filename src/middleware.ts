@@ -1,14 +1,5 @@
-import createMiddleware from 'next-intl/middleware';
- 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['en', 'es', 'fr'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en'
-});
- 
+// This file is a remnant of a previous feature and is currently not in use.
+export function middleware() {}
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(es|fr|en)/:path*']
+  matcher: [],
 };
