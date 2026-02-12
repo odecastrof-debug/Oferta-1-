@@ -16,6 +16,7 @@ import { CtaButtonSection } from '@/components/landing/cta-button-section';
 import { VisualValueSection } from '@/components/landing/visual-value-section';
 import { GallerySection } from '@/components/landing/gallery-section';
 import { SocialProofToast } from '@/components/SocialProofToast';
+import { StickyCtaBar } from '@/components/landing/StickyCtaBar';
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <FinalCtaSection />
       <Footer />
       <SocialProofToast />
+      <StickyCtaBar />
     </div>
   );
 }
