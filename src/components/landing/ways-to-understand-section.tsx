@@ -12,12 +12,13 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 const itemLabels = {
-      "cartography": "Cartography",
-      "real_locations": "Real Locations",
-      "reconstructions": "3D Reconstructions",
-      "landscapes": "Biblical Landscapes"
+      "cartography": "item_cartography",
+      "real_locations": "item_real_locations",
+      "reconstructions": "item_reconstructions",
+      "landscapes": "item_landscapes"
     };
 
 const carouselItemData = [
@@ -28,6 +29,7 @@ const carouselItemData = [
 ];
 
 export function WaysToUnderstandSection() {
+  const t = useTranslations('WaysToUnderstandSection');
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -53,10 +55,10 @@ export function WaysToUnderstandSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold text-primary tracking-widest uppercase">
-            Inside the material
+            {t('prelude')}
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-            Different types of visual content
+            {t('title')}
           </h2>
         </div>
 
@@ -75,6 +77,7 @@ export function WaysToUnderstandSection() {
                   (img) => img.id === item.id
                 );
                 if (!imageData) return null;
+                const labelKey = itemLabels[item.key as keyof typeof itemLabels];
                 return (
                   <CarouselItem
                     key={index}
@@ -85,7 +88,7 @@ export function WaysToUnderstandSection() {
                         <CardContent className="relative aspect-[3/2] p-0">
                           <Image
                             src={imageData.imageUrl}
-                            alt={itemLabels[item.key as keyof typeof itemLabels]}
+                            alt={t(labelKey)}
                             fill
                             className="object-cover transition-transform duration-300 group-hover:scale-105"
                             data-ai-hint={imageData.imageHint}
@@ -93,7 +96,7 @@ export function WaysToUnderstandSection() {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-lg" />
                           <div className="absolute bottom-0 left-0 p-6">
                             <h3 className="text-lg font-semibold text-white tracking-wider font-headline">
-                              {itemLabels[item.key as keyof typeof itemLabels].toUpperCase()}
+                              {t(labelKey).toUpperCase()}
                             </h3>
                           </div>
                         </CardContent>
@@ -118,7 +121,7 @@ export function WaysToUnderstandSection() {
                     ? 'w-10 bg-primary'
                     : 'bg-foreground/20 hover:bg-foreground/30'
                 )}
-                aria-label={`Go to slide ${i + 1}`}
+                aria-label={t('slide_aria', {number: i + 1})}
                 />
             ))}
           </div>

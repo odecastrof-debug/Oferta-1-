@@ -3,6 +3,7 @@
 import { CheckCircle2, X } from 'lucide-react';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 const purchases = [
   { name: 'Joseph', location: 'Texas' },
@@ -33,6 +34,7 @@ type Purchase = {
 };
 
 export function SocialProofToast() {
+  const t = useTranslations('SocialProofToast');
   const [currentPurchase, setCurrentPurchase] = useState<Purchase | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -106,15 +108,15 @@ export function SocialProofToast() {
         <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-green-400 mt-0.5" />
         <div className="flex-grow">
           <p className="text-sm font-medium text-white">
-            {currentPurchase.name} from {currentPurchase.location} just purchased
+            {t('purchase', { name: currentPurchase.name, location: currentPurchase.location })}
           </p>
-          <p className="text-xs text-gray-500 mt-1">Just now</p>
+          <p className="text-xs text-gray-500 mt-1">{t('time')}</p>
         </div>
         <button
           onClick={handleClose}
           className="absolute top-2 right-2 rounded-full p-1 text-gray-400 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
         >
-          <span className="sr-only">Close</span>
+          <span className="sr-only">{t('close')}</span>
           <X className="h-4 w-4" />
         </button>
       </div>

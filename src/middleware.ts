@@ -1,5 +1,10 @@
-// This file is a remnant of a previous feature and is currently not in use.
-export function middleware() {}
+import createMiddleware from 'next-intl/middleware';
+
+export default createMiddleware({
+  locales: ['en', 'fr'],
+  defaultLocale: 'en'
+});
+
 export const config = {
-  matcher: [],
+  matcher: ['/', '/(fr|en)/:path*']
 };
