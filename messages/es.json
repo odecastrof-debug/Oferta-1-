@@ -1,1 +1,200 @@
-{}
+{
+  "Header": {
+    "title": "Geografía Bíblica",
+    "subtitle": "del Génesis al Apocalipsis",
+    "cta": "Consíguelo ahora"
+  },
+  "HeroSection": {
+    "prelude": "Reconocido como el material más completo del mercado",
+    "title": "Haz un viaje a través de cada escenario bíblico desde <primary>el Génesis hasta el Apocalipsis</primary>",
+    "description": "Una guía visual profunda y accesible con más de 280 imágenes cinematográficas que revelan los escenarios, paisajes y lugares donde ocurrió cada evento bíblico.",
+    "pages": "500+ PÁGINAS",
+    "access": "Acceso instantáneo después de la compra"
+  },
+  "StatsSection": {
+    "images": "Imágenes de alta resolución",
+    "books": "Libros cubiertos",
+    "accuracy": "Precisión histórica"
+  },
+  "CtaButtonSection": {
+    "cta": "Consíguelo por $5.90",
+    "subtext": "Descarga instantánea • Acceso de por vida"
+  },
+  "VisualValueSection": {
+    "title": "Entiende la Biblia como nunca antes",
+    "description": "El material de Geografía Bíblica es una guía visual completa para comprender los escenarios de las Escrituras.",
+    "feature1": "Los 66 libros de la Biblia cubiertos — nada queda fuera, desde el Génesis hasta el Apocalipsis",
+    "feature2": "Mapas y rutas de los viajes bíblicos",
+    "feature3": "Sigue los pasos de Abraham, Moisés y Pablo",
+    "feature4": "Reconstrucciones 3D de templos y ciudades",
+    "feature5": "Mira cómo eran los lugares en su tiempo",
+    "feature6": "Fotos reales de lugares sagrados hoy",
+    "feature7": "Conecta el pasado con el presente",
+    "badge": "Descarga instantánea + Actualizaciones de por vida"
+  },
+  "GallerySection": {
+    "title": "Imágenes que dan vida a la Biblia",
+    "description": "Prueba un poco de lo que verás en el material de Geografía Bíblica:",
+    "item_eden_label": "Jardín del Edén",
+    "item_eden_reference": "Génesis",
+    "item_red_sea_label": "Mar Rojo",
+    "item_red_sea_reference": "Éxodo",
+    "item_jerusalem_label": "Antigua Jerusalén",
+    "item_jerusalem_reference": "Reyes",
+    "item_jordan_river_label": "El río Jordán",
+    "item_jordan_river_reference": "Josué",
+    "item_galilee_label": "Mar de Galilea",
+    "item_galilee_reference": "Evangelios",
+    "quote": "“Tu palabra es una lámpara para mis pies, una luz en mi camino.”",
+    "quote_reference": "Salmo 119:105"
+  },
+  "WaysToUnderstandSection": {
+    "prelude": "Dentro del material",
+    "title": "Diferentes tipos de contenido visual",
+    "item_cartography": "Cartografía",
+    "item_real_locations": "Ubicaciones reales",
+    "item_reconstructions": "Reconstrucciones 3D",
+    "item_landscapes": "Paisajes bíblicos",
+    "slide_aria": "Ir a la diapositiva {number}"
+  },
+  "ChallengeSection": {
+    "title": "Lo que encontrarás en el material de Geografía Bíblica es único",
+    "description": "Nuestras imágenes se producen en base a 3 pilares:",
+    "feature1_title": "Geografía física detallada",
+    "feature1_description": "Relieve, clima, vegetación, ríos y paisajes recreados con precisión científica.",
+    "feature2_title": "Contexto arqueológico",
+    "feature2_description": "Ruinas y estructuras basadas en descubrimientos arqueológicos documentados.",
+    "feature3_title": "Cartografía académica",
+    "feature3_description": "Mapas y rutas validadas por especialistas en estudios bíblicos.",
+    "quote": "\"No encontrarás nada como esto en ningún otro lugar.\"",
+    "cta": "Comprar ahora"
+  },
+  "ModulesSection": {
+    "title": "6 módulos que cubren toda la historia bíblica",
+    "module1_title": "Módulo 01 — Era de los Patriarcas",
+    "module1_images": "(+45 imágenes)",
+    "module1_content1": "La Creación y el Jardín del Edén",
+    "module1_content2": "El Diluvio y el Arca de Noé",
+    "module1_content3": "Abraham, Isaac y Jacob",
+    "module1_content4": "José en Egipto",
+    "module2_title": "Módulo 02 — Éxodo y Desierto",
+    "module2_images": "(+50 imágenes)",
+    "module2_content1": "Las plagas de Egipto",
+    "module2_content2": "El cruce del Mar Rojo",
+    "module2_content3": "El Monte Sinaí y los Mandamientos",
+    "module2_content4": "40 años en el desierto",
+    "module3_title": "Módulo 03 — Conquista y Reino",
+    "module3_images": "(+55 imágenes)",
+    "module3_content1": "Josué y la Tierra Prometida",
+    "module3_content2": "Era de los Jueces",
+    "module3_content3": "Reyes David y Salomón",
+    "module3_content4": "El Templo de Jerusalén",
+    "module4_title": "Módulo 04 — Profetas y Exilio",
+    "module4_images": "(+40 imágenes)",
+    "module4_content1": "Elías y Eliseo",
+    "module4_content2": "Caída de Israel y Judá",
+    "module4_content3": "Exilio babilónico",
+    "module4_content4": "Regreso a Jerusalén",
+    "module5_title": "Módulo 05 — Vida de Jesús",
+    "module5_images": "(+60 imágenes)",
+    "module5_content1": "Belén y Nazaret",
+    "module5_content2": "Ministerio en Galilea",
+    "module5_content3": "Jerusalén en tiempos de Jesús",
+    "module5_content4": "Crucifixión y Resurrección",
+    "module6_title": "Módulo 06 — Cristianismo primitivo",
+    "module6_images": "(+35 imágenes)",
+    "module6_content1": "Viajes misioneros de Pablo",
+    "module6_content2": "Iglesias en Asia Menor",
+    "module6_content3": "Antigua Roma",
+    "module6_content4": "Visiones del Apocalipsis",
+    "quote": "“Bienaventurados los que tienen hambre y sed de justicia, porque ellos serán saciados.”",
+    "quote_reference": "Mateo 5:6"
+  },
+  "TestimonialSection": {
+    "quote": "“Nunca había visto nada igual. Las imágenes son de una calidad asombrosa y me ayudaron a comprender pasajes que he estado leyendo durante 20 años sin comprender realmente el contexto.”",
+    "author": "Pastor Michael S.",
+    "location": "Dallas, Texas"
+  },
+  "WhatYouGetSection": {
+    "title": "Todo esto es tuyo hoy:",
+    "badge": "Incluido sin costo adicional",
+    "item1": "E-book completo — más de 500 páginas para explorar",
+    "item2": "Más de 280 imágenes que transforman tu lectura",
+    "item3": "7 bonos exclusivos que profundizan tu estudio",
+    "item4": "Acceso instantáneo — descarga inmediatamente",
+    "item5": "Actualizaciones de por vida sin costo adicional",
+    "item6": "Garantía total de 30 días — sin riesgos para ti"
+  },
+  "BonusesSection": {
+    "title": "7 herramientas que profundizan tu estudio",
+    "badge": "Incluido sin costo adicional",
+    "bonus1": "Comprende quiénes eran los enemigos de Israel",
+    "bonus2": "Visualiza toda la historia bíblica en orden",
+    "bonus3": "Localiza cualquier lugar bíblico al instante",
+    "bonus4": "Descubre el significado de cada lugar sagrado",
+    "bonus5": "Recorre el Templo de Salomón habitación por habitación",
+    "bonus6": "Profundiza tu estudio con ejercicios guiados",
+    "bonus7": "Recibe nuevas imágenes sin pagar más",
+    "free": "GRATIS",
+    "priceless": "Invaluable"
+  },
+  "PricingSection": {
+    "title": "Oferta por tiempo limitado",
+    "summary1": "Más de 280 imágenes que transforman tu lectura",
+    "summary2": "Todos los 66 libros cubiertos",
+    "summary3": "7 bonos exclusivos (valor de US$166)",
+    "summary4": "Acceso instantáneo",
+    "summary5": "Actualizaciones de por vida",
+    "payment_period": "Pago único · Acceso de por vida",
+    "cta": "Comprar ahora — US$5.90",
+    "secure_payment": "Pago seguro",
+    "instant_access": "Acceso instantáneo",
+    "payment_methods": "Tarjeta o PayPal"
+  },
+  "GuaranteeSection": {
+    "title": "Garantía completa de 30 días",
+    "description": "Si dentro de los primeros 30 días no sientes que este material te ayudó a comprender mejor la Biblia a través de imágenes y contexto visual, te reembolsaremos el 100% de tu dinero. Sin preguntas. Sin complicaciones.",
+    "risk": "El riesgo es completamente nuestro."
+  },
+  "FaqSection": {
+    "title": "¿Tienes preguntas?",
+    "faq1_question": "¿Cómo recibo el material?",
+    "faq1_answer": "¡Al instante! Después de confirmar tu pago, recibirás un correo electrónico con un enlace para descargar todos los materiales. Puedes acceder a él en cualquier dispositivo: computadora, tableta o teléfono inteligente.",
+    "faq2_question": "¿En qué formato está el material?",
+    "faq2_answer": "El libro electrónico principal está en formato PDF, lo que lo hace compatible con todos los dispositivos. Las imágenes están en formato JPG de alta resolución y otros bonos pueden estar en PDF u otros formatos accesibles.",
+    "faq3_question": "¿Puedo imprimir el material?",
+    "faq3_answer": "Sí, puedes imprimir el libro electrónico y las imágenes para tu uso personal o para grupos de estudio. El formato de alta resolución garantiza una excelente calidad de impresión.",
+    "faq4_question": "¿Cuánto tiempo tengo acceso?",
+    "faq4_answer": "Tienes acceso de por vida a todos los materiales, incluidas todas las futuras actualizaciones. Paga una vez y disfruta del contenido para siempre.",
+    "faq5_question": "¿Es seguro comprar?",
+    "faq5_answer": "Absolutamente. Nuestra plataforma de pago utiliza seguridad de última generación para proteger tus datos. También ofrecemos una garantía de devolución de dinero de 30 días, por lo que tu compra es completamente libre de riesgos."
+  },
+  "FinalCtaSection": {
+    "title": "¿Listo para ver la Biblia con nuevos ojos?",
+    "description": "Miles de estudiantes ya han descubierto una forma más clara de estudiar las Escrituras. Hoy puedes ser uno de ellos, sin riesgos.",
+    "choice1": "Puedes seguir leyendo la Biblia como un simple texto...",
+    "choice2": "o finalmente ver dónde sucedió todo.",
+    "cta": "Explora la Biblia en el mapa ahora",
+    "subtext": "Acceso instantáneo · Pago único · Pago 100% seguro · Garantía completa de 30 días"
+  },
+  "Footer": {
+    "copyright": "Geografía Bíblica © {currentYear} — Todos los derechos reservados",
+    "terms": "Términos de uso",
+    "privacy": "Política de privacidad",
+    "contact": "Contacto"
+  },
+  "StickyCtaBar": {
+    "cta": "Consíguelo ahora"
+  },
+  "SocialProofToast": {
+    "purchase": "{name} de {location} acaba de comprar",
+    "time": "Justo ahora",
+    "close": "Cerrar"
+  },
+  "LanguageSwitcher": {
+    "change_language": "Cambiar idioma",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

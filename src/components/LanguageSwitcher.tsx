@@ -42,6 +42,12 @@ export function LanguageSwitcher() {
         >
           {t('fr')}
         </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => changeLocale('es')}
+          disabled={locale === 'es'}
+        >
+          {t('es')}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
