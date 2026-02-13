@@ -1,6 +1,6 @@
 'use client';
 
-import { usePathname, useRouter } from 'next-intl/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import {
   DropdownMenu,
@@ -18,7 +18,25 @@ export function LanguageSwitcher() {
   const t = useTranslations('LanguageSwitcher');
 
   const changeLocale = (nextLocale: string) => {
-    router.replace(pathname, { locale: nextLocale });
+    // The pathname from `next/navigation` is the full path with locale.
+    // We need to remove the current locale and add the new one.
+    let pathWithoutLocale = pathname;
+    if (pathname.startsWith(`/${locale}`)) {
+      pathWithoutLocale = pathname.substring(locale.length + 1) || '/';
+    }
+
+    let newUrl;
+    if (nextLocale === 'en') {
+      // Default locale doesn't need a prefix.
+      newUrl = pathWithoutLocale;
+    } else {
+      if (pathWithoutLocale === '/') {
+        newUrl = `/${nextLocale}`;
+      } else {
+        newUrl = `/${nextLocale}${pathWithoutLocale}`;
+      }
+    }
+    router.replace(newUrl);
   };
 
   return (
@@ -41,12 +59,6 @@ export function LanguageSwitcher() {
           disabled={locale === 'fr'}
         >
           {t('fr')}
-        </DropdownMenuItem>
-        <DropdownMenuItem
-          onClick={() => changeLocale('es')}
-          disabled={locale === 'es'}
-        >
-          {t('es')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
