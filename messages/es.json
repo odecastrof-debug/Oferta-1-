@@ -1,3 +1,4 @@
+
 {
   "Header": {
     "title": "Geografía Bíblica",
@@ -66,7 +67,7 @@
     "feature2_description": "Ruinas y estructuras basadas en descubrimientos arqueológicos documentados.",
     "feature3_title": "Cartografía académica",
     "feature3_description": "Mapas y rutas validadas por especialistas en estudios bíblicos.",
-    "quote": "\"No encontrarás nada como esto en ningún otro lugar.\"",
+    "quote": "“No encontrarás nada como esto en ningún otro lugar.”",
     "cta": "Comprar ahora"
   },
   "ModulesSection": {
@@ -139,15 +140,27 @@
     "priceless": "Invaluable"
   },
   "PricingSection": {
-    "title": "Oferta por tiempo limitado",
-    "summary1": "Más de 280 imágenes que transforman tu lectura",
-    "summary2": "Todos los 66 libros cubiertos",
-    "summary3": "7 bonos exclusivos (valor de US$166)",
-    "summary4": "Acceso instantáneo",
-    "summary5": "Actualizaciones de por vida",
-    "payment_period": "Pago único · Acceso de por vida",
-    "cta": "Comprar ahora — US$5.90",
-    "secure_payment": "Pago seguro",
+    "title": "Inversión",
+    "subtitle": "Acceso completo a un precio asequible",
+    "comparison1_label": "Viaje a la Tierra Santa",
+    "comparison1_value": "US$5,000+",
+    "comparison2_label": "Cursos de Geografía Bíblica",
+    "comparison2_value": "US$297+",
+    "comparison3_label": "Atlas Bíblicos Impresos",
+    "comparison3_value": "US$89+",
+    "offer_badge": "Oferta por tiempo limitado",
+    "product_title": "Geografía Bíblica",
+    "product_subtitle": "Del Génesis al Apocalipsis",
+    "bullet1": "E-book completo con más de 280 imágenes",
+    "bullet2": "Cobertura de los 66 libros",
+    "bullet3": "7 bonos exclusivos (+$166 en valor)",
+    "bullet4": "Acceso instantáneo después de la compra",
+    "bullet5": "Actualizaciones de por vida",
+    "for_only": "Por solo",
+    "payment_period": "Pago único | Acceso de por vida",
+    "notice": "Obtén acceso instantáneo después de la compra",
+    "cta_text": "Consíguelo ahora por $5.90",
+    "secure_payment": "Compra segura",
     "instant_access": "Acceso instantáneo",
     "payment_methods": "Tarjeta o PayPal"
   },
@@ -160,7 +173,7 @@
     "title": "¿Tienes preguntas?",
     "faq1_question": "¿Cómo recibo el material?",
     "faq1_answer": "¡Al instante! Después de confirmar tu pago, recibirás un correo electrónico con un enlace para descargar todos los materiales. Puedes acceder a él en cualquier dispositivo: computadora, tableta o teléfono inteligente.",
-    "faq2_question": "¿En qué formato está el material?",
+    "faq2_question": "¿En qué format está el material?",
     "faq2_answer": "El libro electrónico principal está en formato PDF, lo que lo hace compatible con todos los dispositivos. Las imágenes están en formato JPG de alta resolución y otros bonos pueden estar en PDF u otros formatos accesibles.",
     "faq3_question": "¿Puedo imprimir el material?",
     "faq3_answer": "Sí, puedes imprimir el libro electrónico y las imágenes para tu uso personal o para grupos de estudio. El formato de alta resolución garantiza una excelente calidad de impresión.",
@@ -188,7 +201,7 @@
   },
   "SocialProofToast": {
     "purchase": "{name} de {location} acaba de comprar",
-    "time": "Justo ahora",
+    "time": "Just ahora",
     "close": "Cerrar"
   },
   "LanguageSwitcher": {
