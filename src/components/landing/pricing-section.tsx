@@ -25,7 +25,7 @@ export function PricingSection() {
   const t = useTranslations('PricingSection');
   
   return (
-    <section id="offer" className="py-16 sm:py-24 bg-background">
+    <section className="py-16 sm:py-24 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -52,7 +52,7 @@ export function PricingSection() {
         </div>
 
         {/* Main Offer Block */}
-        <Card className="border-2 border-primary shadow-2xl shadow-primary/10 overflow-hidden bg-[#1A1A1A]">
+        <Card id="offer" className="scroll-mt-24 border-2 border-primary shadow-2xl shadow-primary/10 overflow-hidden bg-[#1A1A1A]">
           <div className="p-8 sm:p-12">
             <div className="text-center mb-10">
               <Badge className="bg-primary/20 text-primary hover:bg-primary/30 border-none mb-6 px-4 py-1 text-sm uppercase tracking-wider font-bold">
