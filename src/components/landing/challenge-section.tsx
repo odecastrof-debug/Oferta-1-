@@ -65,7 +65,7 @@ export function ChallengeSection() {
             <div className="text-right">
                 <p className="text-3xl font-bold text-foreground">
                     <span className="text-xl text-muted-foreground line-through mr-2">$49.99</span>
-                    <span className="text-primary ml-2">$5.90</span>
+                    <span className="text-primary ml-2">$8.90</span>
                 </p>
             </div>
             <Button asChild size="lg" className="px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90">

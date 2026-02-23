@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Button } from "@/components/ui/button";
@@ -91,7 +90,7 @@ export function PricingSection() {
                   <p className="text-sm text-muted-foreground uppercase tracking-widest mb-1">{t('for_only')}</p>
                   <div className="flex items-start justify-center text-primary">
                     <span className="text-2xl mt-2 font-bold">US$</span>
-                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter ml-1">5.90</span>
+                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter ml-1">8.90</span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 font-medium italic opacity-80">
                     {t('payment_period')}

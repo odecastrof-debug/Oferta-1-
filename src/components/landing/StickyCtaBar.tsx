@@ -35,7 +35,7 @@ export function StickyCtaBar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center sm:items-baseline gap-2 sm:gap-4">
-            <span className="text-xl font-bold text-primary">US$5.90</span>
+            <span className="text-xl font-bold text-primary">US$8.90</span>
             <span className="hidden sm:inline text-md text-muted-foreground line-through">US$49.99</span>
         </div>
         <Button asChild size="lg" className="shrink-0">

@@ -1,4 +1,3 @@
-
 {
   "Header": {
     "title": "Geografía Bíblica",
@@ -18,7 +17,7 @@
     "accuracy": "Precisión histórica"
   },
   "CtaButtonSection": {
-    "cta": "Consíguelo por $5.90",
+    "cta": "Consíguelo por $8.90",
     "subtext": "Descarga instantánea • Acceso de por vida"
   },
   "VisualValueSection": {
@@ -51,7 +50,7 @@
   },
   "WaysToUnderstandSection": {
     "prelude": "Dentro del material",
-    "title": "Diferentes tipos de contenido visual",
+    "title": "Different types of visual content",
     "item_cartography": "Cartografía",
     "item_real_locations": "Ubicaciones reales",
     "item_reconstructions": "Reconstrucciones 3D",
@@ -79,31 +78,31 @@
     "module1_content3": "Abraham, Isaac y Jacob",
     "module1_content4": "José en Egipto",
     "module2_title": "Módulo 02 — Éxodo y Desierto",
-    "module2_images": "(+50 imágenes)",
+    "module2_images": "(+50 images)",
     "module2_content1": "Las plagas de Egipto",
     "module2_content2": "El cruce del Mar Rojo",
     "module2_content3": "El Monte Sinaí y los Mandamientos",
     "module2_content4": "40 años en el desierto",
     "module3_title": "Módulo 03 — Conquista y Reino",
-    "module3_images": "(+55 imágenes)",
+    "module3_images": "(+55 images)",
     "module3_content1": "Josué y la Tierra Prometida",
     "module3_content2": "Era de los Jueces",
     "module3_content3": "Reyes David y Salomón",
     "module3_content4": "El Templo de Jerusalén",
     "module4_title": "Módulo 04 — Profetas y Exilio",
-    "module4_images": "(+40 imágenes)",
+    "module4_images": "(+40 images)",
     "module4_content1": "Elías y Eliseo",
     "module4_content2": "Caída de Israel y Judá",
     "module4_content3": "Exilio babilónico",
     "module4_content4": "Regreso a Jerusalén",
     "module5_title": "Módulo 05 — Vida de Jesús",
-    "module5_images": "(+60 imágenes)",
+    "module5_images": "(+60 images)",
     "module5_content1": "Belén y Nazaret",
     "module5_content2": "Ministerio en Galilea",
     "module5_content3": "Jerusalén en tiempos de Jesús",
-    "module5_content4": "Crucifixión y Resurrección",
+    "module5_content4": "Crucifixion y Resurrección",
     "module6_title": "Módulo 06 — Cristianismo primitivo",
-    "module6_images": "(+35 imágenes)",
+    "module6_images": "(+35 images)",
     "module6_content1": "Viajes misioneros de Pablo",
     "module6_content2": "Iglesias en Asia Menor",
     "module6_content3": "Antigua Roma",
@@ -159,7 +158,7 @@
     "for_only": "Por solo",
     "payment_period": "Pago único | Acceso de por vida",
     "notice": "Obtén acceso instantáneo después de la compra",
-    "cta_text": "Consíguelo ahora por $5.90",
+    "cta_text": "Consíguelo ahora por $8.90",
     "secure_payment": "Compra segura",
     "instant_access": "Acceso instantáneo",
     "payment_methods": "Tarjeta o PayPal"
