@@ -38,7 +38,7 @@ export function StickyCtaBar() {
             <span className="text-xl font-bold text-primary">US$8.90</span>
             <span className="hidden sm:inline text-md text-muted-foreground line-through">US$49.99</span>
         </div>
-        <Button asChild size="lg" className="shrink-0">
+        <Button asChild size="lg" className="shrink-0 motion-safe:animate-pulse-premium">
           <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
             {t('cta')}
             <ArrowRight className="ml-2 h-5 w-5" />

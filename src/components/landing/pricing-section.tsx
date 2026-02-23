@@ -25,7 +25,7 @@ export function PricingSection() {
   const t = useTranslations('PricingSection');
   
   return (
-    <section id="pricing" className="py-16 sm:py-24 bg-background">
+    <section id="offer" className="py-16 sm:py-24 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -101,7 +101,7 @@ export function PricingSection() {
                   <div className="bg-green-500/10 text-green-400 text-xs font-bold text-center py-2 rounded-t-lg border-x border-t border-green-500/20 uppercase tracking-widest">
                     {t('notice')}
                   </div>
-                  <Button asChild size="lg" className="w-full h-16 text-xl font-bold bg-primary hover:bg-primary/90 rounded-t-none shadow-lg shadow-primary/20">
+                  <Button asChild size="lg" className="w-full h-16 text-xl font-bold bg-primary hover:bg-primary/90 rounded-t-none shadow-lg shadow-primary/20 motion-safe:animate-pulse-premium">
                     <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
                       {t('cta_text')}
                       <ArrowRight className="ml-2 h-6 w-6" />

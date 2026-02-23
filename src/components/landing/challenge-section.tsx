@@ -68,7 +68,7 @@ export function ChallengeSection() {
                     <span className="text-primary ml-2">$8.90</span>
                 </p>
             </div>
-            <Button asChild size="lg" className="px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90">
+            <Button asChild size="lg" className="px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90 motion-safe:animate-pulse-premium">
                 <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
                     {t('cta')}
                 </Link>

@@ -27,7 +27,7 @@ export function FinalCtaSection() {
                 <span className="text-primary ml-4">US$8.90</span>
             </p>
         </div>
-        <Button asChild size="lg" className="mt-8 text-lg px-12 py-8">
+        <Button asChild size="lg" className="mt-8 text-lg px-12 py-8 motion-safe:animate-pulse-premium">
           <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
             {t('cta')}
           </Link>
