@@ -6,7 +6,7 @@ import { X, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 export function PromoPopup() {
   const t = useTranslations('PromoPopup');
@@ -65,10 +65,10 @@ export function PromoPopup() {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="relative w-full max-w-md bg-[#11151B] border border-primary/20 rounded-2xl p-8 shadow-2xl animate-in zoom-in-95 duration-300">
+      <div className="relative w-full max-w-[520px] bg-[#11151B] border border-primary/20 rounded-2xl p-8 shadow-2xl animate-in zoom-in-95 duration-300">
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-muted-foreground hover:text-white transition-colors"
+          className="absolute top-4 right-4 text-muted-foreground hover:text-white transition-colors z-10"
           aria-label="Close"
         >
           <X className="w-6 h-6" />
@@ -82,6 +82,16 @@ export function PromoPopup() {
           <h2 className="text-2xl font-bold text-primary font-headline mb-4">
             {t('title')}
           </h2>
+
+          <div className="relative w-full aspect-[16/9] my-4 rounded-[12px] overflow-hidden shadow-lg border border-white/5">
+            <Image
+              src="https://i.postimg.cc/JzzqJFFd/Chat-GPT-Image-Feb-24-2026-02-00-34-PM.png"
+              alt="Complete Combo Offer"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           
           <p className="text-muted-foreground mb-8">
             {t('description')}
