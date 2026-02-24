@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Button } from "@/components/ui/button";
@@ -46,7 +45,7 @@ export function PricingSection() {
         </div>
 
         {/* Bundle / Choose your option section */}
-        <div id="offer" className="scroll-mt-24 text-center mb-12">
+        <div className="scroll-mt-24 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-foreground font-headline">
             {t('bundle_title')}
           </h2>
@@ -54,11 +53,11 @@ export function PricingSection() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Option 1: Biblical Geography */}
-          <Card className="bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col">
+          <Card id="offer" className="scroll-mt-24 bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col shadow-lg">
             <div className="relative aspect-[16/9] w-full">
               <Image 
-                src="https://id-preview--b75d8225-6137-4251-9037-445b38b9b098.lovable.app/assets/book-cover-Ck3q7dk0.jpg"
-                alt={t('product1_title')}
+                src="https://i.postimg.cc/jjFxghdb/book-cover-Ck3q7dk0.jpg"
+                alt="Biblical Geography Book Cover"
                 fill
                 className="object-cover"
               />
@@ -87,14 +86,13 @@ export function PricingSection() {
           </Card>
 
           {/* Option 2: Paul's Letters */}
-          <Card className="bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col">
+          <Card className="bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col shadow-lg">
             <div className="relative aspect-[16/9] w-full">
               <Image 
-                src="https://images.unsplash.com/photo-1585829319091-5efde8997f94"
-                alt={t('product2_title')}
+                src="https://sabercristao.com/wp-content/uploads/2025/02/Capa-Cartas-de-Paulo-2.webp"
+                alt="Paul's Letters Explained Cover"
                 fill
                 className="object-cover"
-                data-ai-hint="ancient manuscript"
               />
             </div>
             <CardHeader>
