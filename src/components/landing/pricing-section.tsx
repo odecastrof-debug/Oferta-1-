@@ -1,11 +1,13 @@
+
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, CreditCard, ShieldCheck, Zap, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const comparisonItems = [
   { labelKey: "comparison1_label", valueKey: "comparison1_value" },
@@ -13,20 +15,12 @@ const comparisonItems = [
   { labelKey: "comparison3_label", valueKey: "comparison3_value" }
 ];
 
-const bulletPoints = [
-  "bullet1",
-  "bullet2",
-  "bullet3",
-  "bullet4",
-  "bullet5"
-];
-
 export function PricingSection() {
   const t = useTranslations('PricingSection');
   
   return (
     <section className="py-16 sm:py-24 bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl font-headline">
@@ -38,7 +32,7 @@ export function PricingSection() {
         </div>
 
         {/* Value Comparison */}
-        <div className="flex flex-col items-center gap-4 mb-16 max-w-lg mx-auto">
+        <div className="flex flex-col items-center gap-4 mb-20 max-w-lg mx-auto">
           {comparisonItems.map((item, index) => (
             <Card key={index} className="w-full bg-card/50 border-border/20 shadow-sm">
               <CardContent className="flex items-center justify-between p-4 sm:px-6">
@@ -51,18 +45,105 @@ export function PricingSection() {
           ))}
         </div>
 
-        {/* Main Offer Block */}
-        <Card id="offer" className="scroll-mt-24 border-2 border-primary shadow-2xl shadow-primary/10 overflow-hidden bg-[#1A1A1A]">
+        {/* Bundle / Choose your option section */}
+        <div id="offer" className="scroll-mt-24 text-center mb-12">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground font-headline">
+            {t('bundle_title')}
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          {/* Option 1: Biblical Geography */}
+          <Card className="bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col">
+            <div className="relative aspect-[16/9] w-full">
+              <Image 
+                src="https://id-preview--b75d8225-6137-4251-9037-445b38b9b098.lovable.app/assets/book-cover-Ck3q7dk0.jpg"
+                alt={t('product1_title')}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle className="text-2xl font-headline text-primary">{t('product1_title')}</CardTitle>
+              <div className="text-3xl font-bold text-foreground mt-2">{t('product1_price')}</div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <ul className="space-y-3">
+                {[1, 2, 3, 4].map((i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{t(`product1_bullet${i}`)}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+            <div className="p-6 pt-0">
+              <Button asChild className="w-full motion-safe:animate-pulse-premium">
+                <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
+                  {t('product1_cta')}
+                </Link>
+              </Button>
+            </div>
+          </Card>
+
+          {/* Option 2: Paul's Letters */}
+          <Card className="bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col">
+            <div className="relative aspect-[16/9] w-full">
+              <Image 
+                src="https://images.unsplash.com/photo-1585829319091-5efde8997f94"
+                alt={t('product2_title')}
+                fill
+                className="object-cover"
+                data-ai-hint="ancient manuscript"
+              />
+            </div>
+            <CardHeader>
+              <CardTitle className="text-2xl font-headline text-primary">{t('product2_title')}</CardTitle>
+              <CardDescription className="text-muted-foreground">{t('product2_subtitle')}</CardDescription>
+              <div className="text-3xl font-bold text-foreground mt-2">{t('product2_price')}</div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span>Verse by verse explanation</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span>Theological insights</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span>Historical context</span>
+                </li>
+                <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <span>Instant access</span>
+                </li>
+              </ul>
+            </CardContent>
+            <div className="p-6 pt-0">
+              <Button asChild className="w-full motion-safe:animate-pulse-premium">
+                <Link href="https://pay.hotmart.com/PAULS_LETTERS_PLACEHOLDER">
+                  {t('product2_cta')}
+                </Link>
+              </Button>
+            </div>
+          </Card>
+        </div>
+
+        {/* Option 3: Complete Combo - BEST VALUE */}
+        <Card className="scroll-mt-24 border-2 border-primary shadow-2xl shadow-primary/10 overflow-hidden bg-[#1A1A1A]">
           <div className="p-8 sm:p-12">
             <div className="text-center mb-10">
-              <Badge className="bg-primary/20 text-primary hover:bg-primary/30 border-none mb-6 px-4 py-1 text-sm uppercase tracking-wider font-bold">
-                {t('offer_badge')}
+              <Badge className="bg-primary text-black hover:bg-primary/90 border-none mb-6 px-6 py-1.5 text-sm uppercase tracking-widest font-black">
+                {t('combo_badge')}
               </Badge>
               <h3 className="text-4xl sm:text-5xl font-bold text-foreground font-headline mb-2">
-                {t('product_title')}
+                {t('combo_title')}
               </h3>
               <p className="text-xl text-primary font-medium tracking-wide">
-                {t('product_subtitle')}
+                {t('combo_subtitle')}
               </p>
             </div>
 
@@ -70,12 +151,12 @@ export function PricingSection() {
               {/* Bullet List */}
               <div className="space-y-5">
                 <ul className="space-y-4">
-                  {bulletPoints.map((bullet, index) => (
-                    <li key={index} className="flex items-start gap-3">
+                  {[1, 2, 3].map((i) => (
+                    <li key={i} className="flex items-start gap-3">
                       <div className="bg-primary/10 p-1 rounded-full mt-1">
                         <Check className="w-4 h-4 text-primary" />
                       </div>
-                      <span className="text-lg text-foreground/90">{t(bullet)}</span>
+                      <span className="text-lg text-foreground/90">{t(`combo_bullet${i}`)}</span>
                     </li>
                   ))}
                 </ul>
@@ -85,12 +166,12 @@ export function PricingSection() {
               <div className="flex flex-col items-center">
                 <div className="text-center mb-8">
                   <span className="text-muted-foreground line-through text-2xl font-medium block mb-2 opacity-60">
-                    US$49.99
+                    {t('combo_old_price')}
                   </span>
                   <p className="text-sm text-muted-foreground uppercase tracking-widest mb-1">{t('for_only')}</p>
                   <div className="flex items-start justify-center text-primary">
                     <span className="text-2xl mt-2 font-bold">US$</span>
-                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter ml-1">8.90</span>
+                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter ml-1">16.90</span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 font-medium italic opacity-80">
                     {t('payment_period')}
@@ -102,8 +183,8 @@ export function PricingSection() {
                     {t('notice')}
                   </div>
                   <Button asChild size="lg" className="w-full h-16 text-xl font-bold bg-primary hover:bg-primary/90 rounded-t-none shadow-lg shadow-primary/20 motion-safe:animate-pulse-premium">
-                    <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
-                      {t('cta_text')}
+                    <Link href="https://pay.hotmart.com/COMBO_PLACEHOLDER">
+                      {t('combo_cta')}
                       <ArrowRight className="ml-2 h-6 w-6" />
                     </Link>
                   </Button>
