@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -23,8 +24,8 @@ export function FinalCtaSection() {
         </p>
         <div className="mt-10">
             <p className="text-3xl font-bold text-foreground">
-                <span className="text-muted-foreground line-through">US$49.99</span>
-                <span className="text-primary ml-4">US$8.90</span>
+                <span className="text-muted-foreground line-through">$49.99</span>
+                <span className="text-primary ml-4">$8.90</span>
             </p>
         </div>
         <Button asChild size="lg" className="mt-8 text-lg px-12 py-8 motion-safe:animate-pulse-premium">

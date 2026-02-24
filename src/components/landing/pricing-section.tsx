@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from "@/components/ui/button";
@@ -68,7 +69,7 @@ export function PricingSection() {
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
-                {[1, 2, 3, 4].map((i) => (
+                {[1, 2, 3, 4, 5].map((i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                     <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                     <span>{t(`product1_bullet${i}`)}</span>
@@ -102,22 +103,12 @@ export function PricingSection() {
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
-                <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span>Verse by verse explanation</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span>Theological insights</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span>Historical context</span>
-                </li>
-                <li className="flex items-start gap-2 text-sm text-muted-foreground">
-                  <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span>Instant access</span>
-                </li>
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{t(`product2_bullet${i}`)}</span>
+                  </li>
+                ))}
               </ul>
             </CardContent>
             <div className="p-6 pt-0">
@@ -167,9 +158,10 @@ export function PricingSection() {
                     {t('combo_old_price')}
                   </span>
                   <p className="text-sm text-muted-foreground uppercase tracking-widest mb-1">{t('for_only')}</p>
-                  <div className="flex items-start justify-center text-primary">
-                    <span className="text-2xl mt-2 font-bold">US$</span>
-                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter ml-1">16.90</span>
+                  <div className="flex items-center justify-center text-primary">
+                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter">
+                      {t('combo_price')}
+                    </span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 font-medium italic opacity-80">
                     {t('payment_period')}
