@@ -113,7 +113,7 @@ export function PricingSection() {
             </CardContent>
             <div className="p-6 pt-0">
               <Button asChild className="w-full motion-safe:animate-pulse-premium">
-                <Link href="https://pay.hotmart.com/PAULS_LETTERS_PLACEHOLDER">
+                <Link href="https://pay.hotmart.com/N104611283L?checkoutMode=10">
                   {t('product2_cta')}
                 </Link>
               </Button>
@@ -173,7 +173,7 @@ export function PricingSection() {
                     {t('notice')}
                   </div>
                   <Button asChild size="lg" className="w-full h-16 text-xl font-bold bg-primary hover:bg-primary/90 rounded-t-none shadow-lg shadow-primary/20 motion-safe:animate-pulse-premium">
-                    <Link href="https://pay.hotmart.com/COMBO_PLACEHOLDER">
+                    <Link href="https://pay.hotmart.com/O104611346K?checkoutMode=10">
                       {t('combo_cta')}
                       <ArrowRight className="ml-2 h-6 w-6" />
                     </Link>
