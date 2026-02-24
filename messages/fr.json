@@ -51,7 +51,7 @@
   },
   "WaysToUnderstandSection": {
     "prelude": "À l'intérieur du matériel",
-    "title": "Différents types de contenu visuel",
+    "title": "Différent types de contenu visuel",
     "item_cartography": "Cartographie",
     "item_real_locations": "Lieux réels",
     "item_reconstructions": "Reconstitutions 3D",
@@ -120,7 +120,7 @@
     "title": "Tout ceci est à vous aujourd'hui :",
     "badge": "Inclus sans frais supplémentaires",
     "item1": "E-book complet — plus de 500 pages à explorer",
-    "item2": "280+ images qui transforment votre lecture",
+    "item2": "280+ images que transforment votre lecture",
     "item3": "7 bonus exclusifs qui approfondissent votre étude",
     "item4": "Accès instantané — téléchargez immédiatement",
     "item5": "Mises à jour à vie sans frais supplémentaires",
@@ -235,5 +235,10 @@
     "en": "English",
     "fr": "Français",
     "es": "Español"
+  },
+  "PromoPopup": {
+    "title": "Offre Combo Complet",
+    "description": "Débloquez l'expérience complète avec Géographie Biblique et les Lettres de Paul à un prix spécial.",
+    "cta": "Obtenir le Combo Complet"
   }
 }

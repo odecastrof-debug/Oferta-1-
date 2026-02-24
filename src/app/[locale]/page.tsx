@@ -1,3 +1,4 @@
+
 import { Header } from '@/components/landing/header';
 import { HeroSection } from '@/components/landing/hero-section';
 import { StatsSection } from '@/components/landing/stats-section';
@@ -17,6 +18,7 @@ import { VisualValueSection } from '@/components/landing/visual-value-section';
 import { GallerySection } from '@/components/landing/gallery-section';
 import { SocialProofToast } from '@/components/SocialProofToast';
 import { StickyCtaBar } from '@/components/landing/StickyCtaBar';
+import { PromoPopup } from '@/components/PromoPopup';
 
 export default function Home() {
   return (
@@ -40,6 +42,7 @@ export default function Home() {
       <Footer />
       <SocialProofToast />
       <StickyCtaBar />
+      <PromoPopup />
     </div>
   );
 }

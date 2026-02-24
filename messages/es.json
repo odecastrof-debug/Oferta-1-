@@ -235,5 +235,10 @@
     "en": "English",
     "fr": "Français",
     "es": "Español"
+  },
+  "PromoPopup": {
+    "title": "Oferta Combo Completo",
+    "description": "Desbloquea la experiencia completa con Geografía Bíblica y las Cartas de Pablo a un precio especial.",
+    "cta": "Obtener el Combo Completo"
   }
 }

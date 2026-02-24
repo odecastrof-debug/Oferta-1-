@@ -235,5 +235,10 @@
     "en": "English",
     "fr": "Français",
     "es": "Español"
+  },
+  "PromoPopup": {
+    "title": "Complete Combo Offer",
+    "description": "Unlock the full experience with Biblical Geography and Paul's Letters at a special price.",
+    "cta": "Get the Complete Combo"
   }
 }
