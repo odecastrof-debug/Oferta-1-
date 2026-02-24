@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -11,55 +10,38 @@ import Image from 'next/image';
 export function PromoPopup() {
   const t = useTranslations('PromoPopup');
   const [isVisible, setIsVisible] = useState(false);
-  const [showCount, setShowCount] = useState(0);
 
   useEffect(() => {
-    // Check if dismissed for session
-    const isDismissed = sessionStorage.getItem('promo_dismissed');
-    if (isDismissed) return;
-
-    // Check count for session
-    const currentCount = parseInt(sessionStorage.getItem('promo_count') || '0', 10);
-    if (currentCount >= 3) return;
-
-    setShowCount(currentCount);
-
-    const showTimer = setTimeout(() => {
-      triggerPopup(currentCount);
+    // Initial trigger: 5 seconds after load
+    const initialTimer = setTimeout(() => {
+      setIsVisible(true);
     }, 5000);
 
-    return () => clearTimeout(showTimer);
+    return () => clearTimeout(initialTimer);
   }, []);
 
-  const triggerPopup = (currentCount: number) => {
-    setIsVisible(true);
-    const newCount = currentCount + 1;
-    setShowCount(newCount);
-    sessionStorage.setItem('promo_count', newCount.toString());
-  };
+  // Recurring trigger: Re-show every 20 seconds after it's hidden
+  useEffect(() => {
+    let intervalTimer: NodeJS.Timeout;
+    
+    if (!isVisible) {
+      intervalTimer = setTimeout(() => {
+        setIsVisible(true);
+      }, 20000);
+    }
+
+    return () => {
+      if (intervalTimer) clearTimeout(intervalTimer);
+    };
+  }, [isVisible]);
 
   const handleClose = () => {
     setIsVisible(false);
-    sessionStorage.setItem('promo_dismissed', 'true');
   };
 
   const handleLinkClick = () => {
     setIsVisible(false);
   };
-
-  // Re-trigger logic for 20s interval if not dismissed and count < 3
-  useEffect(() => {
-    if (!isVisible && showCount > 0 && showCount < 3) {
-      const isDismissed = sessionStorage.getItem('promo_dismissed');
-      if (isDismissed) return;
-
-      const intervalTimer = setTimeout(() => {
-        triggerPopup(showCount);
-      }, 20000);
-
-      return () => clearTimeout(intervalTimer);
-    }
-  }, [isVisible, showCount]);
 
   if (!isVisible) return null;
 
