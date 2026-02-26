@@ -20,7 +20,7 @@ export function Header() {
         </div>
         <div className="flex items-center gap-4">
           <Button asChild className="motion-safe:animate-pulse-premium">
-            <Link href="#offer">{t('cta')}</Link>
+            <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">{t('cta')}</Link>
           </Button>
           <LanguageSwitcher />
         </div>
