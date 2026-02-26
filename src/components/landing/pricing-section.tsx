@@ -1,10 +1,8 @@
-
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Check, CreditCard, ShieldCheck, Zap, ArrowRight } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Check } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -45,16 +43,9 @@ export function PricingSection() {
           ))}
         </div>
 
-        {/* Bundle / Choose your option section */}
-        <div className="scroll-mt-24 text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground font-headline">
-            {t('bundle_title')}
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
-          {/* Option 1: Biblical Geography */}
-          <Card id="offer" className="scroll-mt-24 bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col shadow-lg">
+        <div className="flex justify-center">
+          {/* Main Product: Biblical Geography */}
+          <Card id="offer" className="scroll-mt-24 max-w-md w-full bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col shadow-lg">
             <div className="relative aspect-[16/9] w-full">
               <Image 
                 src="https://i.postimg.cc/jjFxghdb/book-cover-Ck3q7dk0.jpg"
@@ -65,7 +56,10 @@ export function PricingSection() {
             </div>
             <CardHeader>
               <CardTitle className="text-2xl font-headline text-primary">{t('product1_title')}</CardTitle>
-              <div className="text-3xl font-bold text-foreground mt-2">{t('product1_price')}</div>
+              <div className="flex flex-col mt-2">
+                <span className="text-sm text-muted-foreground line-through">$49.99</span>
+                <div className="text-3xl font-bold text-foreground">{t('product1_price')}</div>
+              </div>
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
@@ -78,127 +72,17 @@ export function PricingSection() {
               </ul>
             </CardContent>
             <div className="p-6 pt-0">
-              <Button asChild className="w-full motion-safe:animate-pulse-premium">
+              <div className="bg-green-500/10 text-green-400 text-xs font-bold text-center py-2 rounded-t-lg border-x border-t border-green-500/20 uppercase tracking-widest mb-0">
+                {t('notice')}
+              </div>
+              <Button asChild className="w-full h-14 text-lg font-bold rounded-t-none motion-safe:animate-pulse-premium">
                 <Link href="https://pay.hotmart.com/Y104372787M?checkoutMode=10">
-                  {t('product1_cta')}
-                </Link>
-              </Button>
-            </div>
-          </Card>
-
-          {/* Option 2: Paul's Letters */}
-          <Card className="bg-[#1A1A1A] border-border/20 overflow-hidden flex flex-col shadow-lg">
-            <div className="relative aspect-[16/9] w-full">
-              <Image 
-                src="https://sabercristao.com/wp-content/uploads/2025/02/Capa-Cartas-de-Paulo-2.webp"
-                alt="Paul's Letters Explained Cover"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <CardHeader>
-              <CardTitle className="text-2xl font-headline text-primary">{t('product2_title')}</CardTitle>
-              <CardDescription className="text-muted-foreground">{t('product2_subtitle')}</CardDescription>
-              <div className="text-3xl font-bold text-foreground mt-2">{t('product2_price')}</div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <ul className="space-y-3">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                    <span>{t(`product2_bullet${i}`)}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-            <div className="p-6 pt-0">
-              <Button asChild className="w-full motion-safe:animate-pulse-premium">
-                <Link href="https://pay.hotmart.com/N104611283L?checkoutMode=10">
-                  {t('product2_cta')}
+                  {t('cta_text')}
                 </Link>
               </Button>
             </div>
           </Card>
         </div>
-
-        {/* Option 3: Complete Combo - BEST VALUE */}
-        <Card className="scroll-mt-24 border-2 border-primary shadow-2xl shadow-primary/10 overflow-hidden bg-[#1A1A1A]">
-          <div className="p-8 sm:p-12">
-            <div className="text-center mb-10">
-              <Badge className="bg-primary text-black hover:bg-primary/90 border-none mb-6 px-6 py-1.5 text-sm uppercase tracking-widest font-black">
-                {t('combo_badge')}
-              </Badge>
-              <h3 className="text-4xl sm:text-5xl font-bold text-foreground font-headline mb-2">
-                {t('combo_title')}
-              </h3>
-              <p className="text-xl text-primary font-medium tracking-wide">
-                {t('combo_subtitle')}
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              {/* Bullet List */}
-              <div className="space-y-5">
-                <ul className="space-y-4">
-                  {[1, 2, 3].map((i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="bg-primary/10 p-1 rounded-full mt-1">
-                        <Check className="w-4 h-4 text-primary" />
-                      </div>
-                      <span className="text-lg text-foreground/90">{t(`combo_bullet${i}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Price Display and CTA */}
-              <div className="flex flex-col items-center">
-                <div className="text-center mb-8">
-                  <span className="text-muted-foreground line-through text-2xl font-medium block mb-2 opacity-60">
-                    {t('combo_old_price')}
-                  </span>
-                  <p className="text-sm text-muted-foreground uppercase tracking-widest mb-1">{t('for_only')}</p>
-                  <div className="flex items-center justify-center text-primary">
-                    <span className="text-7xl sm:text-8xl font-black font-headline tracking-tighter">
-                      {t('combo_price')}
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4 font-medium italic opacity-80">
-                    {t('payment_period')}
-                  </p>
-                </div>
-
-                <div className="w-full">
-                  <div className="bg-green-500/10 text-green-400 text-xs font-bold text-center py-2 rounded-t-lg border-x border-t border-green-500/20 uppercase tracking-widest">
-                    {t('notice')}
-                  </div>
-                  <Button asChild size="lg" className="w-full h-16 text-xl font-bold bg-primary hover:bg-primary/90 rounded-t-none shadow-lg shadow-primary/20 motion-safe:animate-pulse-premium">
-                    <Link href="https://pay.hotmart.com/O104611346K?checkoutMode=10">
-                      {t('combo_cta')}
-                      <ArrowRight className="ml-2 h-6 w-6" />
-                    </Link>
-                  </Button>
-                </div>
-
-                {/* Trust Row */}
-                <div className="mt-8 flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-muted-foreground opacity-70">
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">{t('secure_payment')}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Zap className="w-4 h-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">{t('instant_access')}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CreditCard className="w-4 h-4" />
-                    <span className="text-xs font-semibold uppercase tracking-wider">{t('payment_methods')}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card>
       </div>
     </section>
   );

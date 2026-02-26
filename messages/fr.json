@@ -1,4 +1,3 @@
-
 {
   "Header": {
     "title": "Géographie Biblique",
@@ -148,8 +147,6 @@
     "comparison2_value": "$297+",
     "comparison3_label": "Atlas bibliques imprimés",
     "comparison3_value": "$89+",
-    "offer_badge": "Offre à durée limitée",
-    "bundle_title": "Forfait / Choisissez votre option",
     "product1_title": "Géographie Biblique",
     "product1_price": "$8.90",
     "product1_bullet1": "E-book complet avec 280+ images",
@@ -157,38 +154,8 @@
     "product1_bullet3": "7 bonus exclusifs (valeur de +$166)",
     "product1_bullet4": "Accès instantané après l'achat",
     "product1_bullet5": "Mises à jour à vie",
-    "product1_cta": "Obtenir Géographie Biblique",
-    "product2_title": "Les Lettres de Paul",
-    "product2_subtitle": "(Expliquées Verset par Verset)",
-    "product2_price": "$9.90",
-    "product2_bullet1": "Les Lettres de Paul Expliquées Verset par Verset",
-    "product2_bullet2": "BONUS#01 - Communication Efficace en Chaire",
-    "product2_bullet3": "BONUS#02 - Développement Spirituel du Prédicateur",
-    "product2_bullet4": "BONUS#03 - Exégèse et Herméneutique Biblique",
-    "product2_bullet5": "BONUS#04 - Histoire de la Prédication Chrétienne",
-    "product2_bullet6": "BONUS#05 - Prédication Expositive",
-    "product2_bullet7": "BONUS#06 - Prédication Thématique",
-    "product2_bullet8": "BONUS#07 - Guide Pratique de Préparation de Sermons",
-    "product2_bullet9": "Ajoutant jusqu'à: $57.00 de contenu.",
-    "product2_bullet10": "Accès à l'espace membres exclusif.",
-    "product2_bullet11": "Support: Par Email",
-    "product2_cta": "Obtenir les Lettres de Paul",
-    "combo_badge": "MEILLEURE VALEUR",
-    "combo_title": "Combo Complet",
-    "combo_subtitle": "Géographie Biblique + Lettres de Paul",
-    "combo_price": "$16.90",
-    "combo_old_price": "$18.80",
-    "combo_bullet1": "Tout dans les deux produits",
-    "combo_bullet2": "Accès instantané",
-    "combo_bullet3": "Mises à jour à vie",
-    "combo_cta": "Obtenir le Combo Complet",
-    "for_only": "Pour seulement",
-    "payment_period": "Paiement unique | Accès à vie",
     "notice": "Obtenez un accès instantané après l'achat",
-    "cta_text": "Obtenez-le maintenant pour $8.90",
-    "secure_payment": "Achat sécurisé",
-    "instant_access": "Accès instantané",
-    "payment_methods": "Carte ou PayPal"
+    "cta_text": "Obtenez-le maintenant pour $8.90"
   },
   "GuaranteeSection": {
     "title": "Garantie complète de 30 jours",
@@ -235,10 +202,5 @@
     "en": "English",
     "fr": "Français",
     "es": "Español"
-  },
-  "PromoPopup": {
-    "title": "Offre Combo Complet",
-    "description": "Débloquez l'expérience complète avec Géographie Biblique et les Lettres de Paul à un prix spécial.",
-    "cta": "Obtenir le Combo Complet"
   }
 }

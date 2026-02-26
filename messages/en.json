@@ -1,4 +1,3 @@
-
 {
   "Header": {
     "title": "Biblical Geography",
@@ -93,7 +92,7 @@
     "module4_title": "Module 04 — Prophets and Exile",
     "module4_images": "(+40 images)",
     "module4_content1": "Elijah and Elisha",
-    "module4_content2": "Fall of Israel and Judah",
+    "module4_content2": "Fall of Israel and Juda",
     "module4_content3": "Babylonian exile",
     "module4_content4": "Return to Jerusalem",
     "module5_title": "Module 05 — Life of Jesus",
@@ -148,8 +147,6 @@
     "comparison2_value": "$297+",
     "comparison3_label": "Printed Biblical Atlases",
     "comparison3_value": "$89+",
-    "offer_badge": "Limited time offer",
-    "bundle_title": "Bundle / Choose your option",
     "product1_title": "Biblical Geography",
     "product1_price": "$8.90",
     "product1_bullet1": "Complete ebook with 280+ images",
@@ -157,38 +154,8 @@
     "product1_bullet3": "7 Exclusive bonuses (+$166 in value)",
     "product1_bullet4": "Instant access after purchase",
     "product1_bullet5": "Lifetime updates",
-    "product1_cta": "Get Biblical Geography",
-    "product2_title": "Paul's Letters",
-    "product2_subtitle": "(Explained Verse by Verse)",
-    "product2_price": "$9.90",
-    "product2_bullet1": "Paul’s Letters Explained Verse by Verse",
-    "product2_bullet2": "BONUS#01 - Effective Communication in the Pulpit",
-    "product2_bullet3": "BONUS#02 - Spiritual Development of the Preacher",
-    "product2_bullet4": "BONUS#03 - Biblical Exegesis and Hermeneutics",
-    "product2_bullet5": "BONUS#04 - History of Christian Preaching",
-    "product2_bullet6": "BONUS#05 - Expository Preaching",
-    "product2_bullet7": "BONUS#06 - Topical Preaching",
-    "product2_bullet8": "BONUS#07 - Sermon Preparation Practical Guide",
-    "product2_bullet9": "Adding up to: $57.00 in content.",
-    "product2_bullet10": "Access to exclusive members area.",
-    "product2_bullet11": "Support: Via Email",
-    "product2_cta": "Get Paul's Letters",
-    "combo_badge": "BEST VALUE",
-    "combo_title": "Complete Combo",
-    "combo_subtitle": "Biblical Geography + Paul’s Letters",
-    "combo_price": "$16.90",
-    "combo_old_price": "$18.80",
-    "combo_bullet1": "Everything in both products",
-    "combo_bullet2": "Instant access",
-    "combo_bullet3": "Lifetime updates",
-    "combo_cta": "Get the Complete Combo",
-    "for_only": "For only",
-    "payment_period": "One-time payment | Lifetime access",
     "notice": "Get instant access after purchase",
-    "cta_text": "Get it now for $8.90",
-    "secure_payment": "Secure purchase",
-    "instant_access": "Instant access",
-    "payment_methods": "Card or PayPal"
+    "cta_text": "Get it now for $8.90"
   },
   "GuaranteeSection": {
     "title": "30-Day Full Guarantee",
@@ -235,10 +202,5 @@
     "en": "English",
     "fr": "Français",
     "es": "Español"
-  },
-  "PromoPopup": {
-    "title": "Complete Combo Offer",
-    "description": "Unlock the full experience with Biblical Geography and Paul's Letters at a special price.",
-    "cta": "Get the Complete Combo"
   }
 }

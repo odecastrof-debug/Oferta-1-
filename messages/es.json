@@ -1,4 +1,3 @@
-
 {
   "Header": {
     "title": "Geografía Bíblica",
@@ -62,7 +61,7 @@
     "title": "Lo que encontrarás en el material de Geografía Bíblica es único",
     "description": " Nuestras imágenes se producen en base a 3 pilares:",
     "feature1_title": "Geografía física detallada",
-    "feature1_description": "Relieve, clima, vegetación, ríos y paisajes recreados con precisión científica.",
+    "feature1_description": "Relieve, clima, vegetation, ríos y paisajes recreados con precisión científica.",
     "feature2_title": "Contexto arqueológico",
     "feature2_description": "Ruinas y estructuras basadas en descubrimientos arqueológicos documentados.",
     "feature3_title": "Cartografía académica",
@@ -101,7 +100,7 @@
     "module5_content1": "Belén y Nazaret",
     "module5_content2": "Ministerio en Galilea",
     "module5_content3": "Jerusalén en tiempos de Jesús",
-    "module5_content4": "Crucifixion y Resurrección",
+    "module5_content4": "Crucifixión y Resurrección",
     "module6_title": "Módulo 06 — Cristianismo primitivo",
     "module6_images": "(+35 images)",
     "module6_content1": "Viajes misioneros de Pablo",
@@ -148,8 +147,6 @@
     "comparison2_value": "$297+",
     "comparison3_label": "Atlas Bíblicos Impresos",
     "comparison3_value": "$89+",
-    "offer_badge": "Oferta por tiempo limitado",
-    "bundle_title": "Paquete / Elige tu opción",
     "product1_title": "Geografía Bíblica",
     "product1_price": "$8.90",
     "product1_bullet1": "E-book completo con 280+ imágenes",
@@ -157,38 +154,8 @@
     "product1_bullet3": "7 bonos exclusivos (valor de +$166)",
     "product1_bullet4": "Acceso instantáneo después de la compra",
     "product1_bullet5": "Actualizaciones de por vida",
-    "product1_cta": "Obtener Geografía Bíblica",
-    "product2_title": "Las Cartas de Pablo",
-    "product2_subtitle": "(Explicadas Versículo por Versículo)",
-    "product2_price": "$9.90",
-    "product2_bullet1": "Las Cartas de Pablo Explicadas Versículo por Versículo",
-    "product2_bullet2": "BONO#01 - Comunicación Efectiva en el Púlpito",
-    "product2_bullet3": "BONO#02 - Desarrollo Espiritual del Predicador",
-    "product2_bullet4": "BONO#03 - Exégesis y Hermenéutica Bíblica",
-    "product2_bullet5": "BONO#04 - Historia de la Predicación Cristiana",
-    "product2_bullet6": "BONO#05 - Predicación Expositiva",
-    "product2_bullet7": "BONO#06 - Predicación Temática",
-    "product2_bullet8": "BONO#07 - Guía Práctica para la Preparación de Sermones",
-    "product2_bullet9": "Sumando hasta: $57.00 en contenido.",
-    "product2_bullet10": "Acceso a área exclusiva para miembros.",
-    "product2_bullet11": "Soporte: Vía Email",
-    "product2_cta": "Obtener Cartas de Pablo",
-    "combo_badge": "MEJOR VALOR",
-    "combo_title": "Combo Completo",
-    "combo_subtitle": "Geografía Bíblica + Cartas de Pablo",
-    "combo_price": "$16.90",
-    "combo_old_price": "$18.80",
-    "combo_bullet1": "Todo en ambos productos",
-    "combo_bullet2": "Acceso instantáneo",
-    "combo_bullet3": "Actualizaciones de por vida",
-    "combo_cta": "Obtener el Combo Completo",
-    "for_only": "Por solo",
-    "payment_period": "Pago único | Acceso de por vida",
     "notice": "Obtén acceso instantáneo después de la compra",
-    "cta_text": "Consíguelo ahora por $8.90",
-    "secure_payment": "Compra segura",
-    "instant_access": "Acceso instantáneo",
-    "payment_methods": "Tarjeta o PayPal"
+    "cta_text": "Consíguelo ahora por $8.90"
   },
   "GuaranteeSection": {
     "title": "Garantía completa de 30 días",
@@ -235,10 +202,5 @@
     "en": "English",
     "fr": "Français",
     "es": "Español"
-  },
-  "PromoPopup": {
-    "title": "Oferta Combo Completo",
-    "description": "Desbloquea la experiencia completa con Geografía Bíblica y las Cartas de Pablo a un precio especial.",
-    "cta": "Obtener el Combo Completo"
   }
 }
